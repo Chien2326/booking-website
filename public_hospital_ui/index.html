@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Hospital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2><span class="back-arrow">←</span> <span class="page-title">Public hospital</span></h2>
+
+    <div class="main-content">
+      <div class="hospital-list">
+        <div class="hospital-card" onclick="showDetails(0)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_BV_115.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Tropical Diseases Hospital</h3>
+            <p>📍 764 Vo Van Kiet, Ward 1, District 5, Ho Chi Minh City</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hospital-card" onclick="showDetails(1)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Singapore_General_Hospital_logo.svg" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Singapore General Hospital</h3>
+            <p>📍 Bukit Merah, Central Region, Singapore</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hospital-card" onclick="showDetails(2)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_BV_115.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Tropical Diseases Hospital</h3>
+            <p>📍 764 Vo Van Kiet, Ward 1, District 5, Ho Chi Minh City</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hospital-card" onclick="showDetails(3)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_BV_115.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Tropical Diseases Hospital</h3>
+            <p>📍 764 Vo Van Kiet, Ward 1, District 5, Ho Chi Minh City</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hospital-detail" id="hospital-detail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Logo_BV_115.png" class="big-logo" />
+        <p id="detail-text">
+          It is a First-Class General Hospital and the final referral level under the Ho Chi Minh City Department of Health...
+        </p>
+        <h4>Picture</h4>
+        <div class="gallery">
+          <img src="https://source.unsplash.com/200x120/?hospital" />
+          <img src="https://source.unsplash.com/201x120/?clinic" />
+          <img src="https://source.unsplash.com/202x120/?reception" />
+          <img src="https://source.unsplash.com/203x120/?doctor" />
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button disabled>&lt;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <span>...</span>
+      <button>99</button>
+      <button>&gt;</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

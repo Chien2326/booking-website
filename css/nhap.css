@@ -1,0 +1,7 @@
+#content .more {
+  display: none;
+}
+
+#content.expanded .more {
+  display: block;
+}

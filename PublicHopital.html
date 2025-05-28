@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Hospital</title>
+    <link rel="stylesheet" href="css/StylePublicHopital.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- https://fontawesome.com/search?q=search&o=r -->
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+    <div class="navbar">
+      <!-- navbar top -->
+      <div class="navbar-top">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+          <span style="color: #00bfff; font-weight: bold;">TCP</span>
+        </div>
+        <!-- Social links -->
+        <div class="social-links">
+          <span><i class="fa-brands fa-facebook"></i> Facebook</span>
+          <span>|</span>
+          <span>Zalo 0363607229</span>
+          <span>|</span>
+          <span><i class="fa-brands fa-tiktok"></i> TikTok</span>
+        </div>
+        <!-- Buttons -->
+        <div class="buttons">
+          <button class="login-btn"><a href="login.html">Login</a></button>
+          <button class="register-btn"><a href="register.html">Register</a></button>
+        </div>
+        <!-- hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- hr -->
+      <hr style="margin: 10px 150px;">
+
+      <!-- navbar-bottom -->
+      <!-- Menu -->
+      <div class="navbar-menu" id="navbarMenu">
+        <div class="menu-item">
+          <a href="#">medical facility ▾</a><!--cơ sở y tế-->
+          <div class="dropdown">
+            <a href="PublicHopital.html">Public hospital</a><!--bệnh viện công-->
+            <a href="#">private hospital</a><!--bệnh viện tư-->
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">medical services ▾</a><!--dịch vụ y tế-->
+          <div class="dropdown">
+            <a href="#">Book at the facility</a><!--đặt khám tại cơ sở-->
+            <a href="#">After-hours booking</a><!--đặt khám ngoài giờ-->
+          </div>  
+        </div>
+        <div class="menu-item">
+          <a href="CorporateHeadthCheck.html">corporate health check-up</a><!--khám sức khỏe doanh nghiệp-->
+        </div>
+        <div class="menu-item">
+          <a href="#">Health news ▾</a><!--tin tức sức khỏe-->
+          <div class="dropdown">
+            <a href="#">Service News</a><!--tin tức dịch vụ-->
+            <a href="#">Medical News</a><!--tin tức y tế-->
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Instructions ▾</a><!--hướng dẫn-->
+          <div class="dropdown">
+            <a href="intruction.html">Book an Appointment</a><!--đặt lịch khám-->
+            <a href="#">Medical Visit Procedure</a><!--thủ tục khám bệnh-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script hamburger icon -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navbarMenu = document.getElementById("navbarMenu");
+
+      hamburger.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+      });
+    </script>
+
+
+    <!-- Notification bar -->
+    <div class="notification-bar">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--Đặt lịch Trợ lý chăm sóc ngay hôm nay — để người thân của bạn được hỗ trợ trong mọi bước khám bệnh!-->
+      </marquee>
+    </div>
+
+
+  <div class="hero-section">
+    <h1>Public hospital</h1>
+    <p>Easily book appointments with no waiting at Vietnam’s top public hospitals.</p>
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Find a healthcare provider...">
+    </div>
+  </div>
+
+
+  <!-- ================================ -->
+
+  <div class="container">
+
+    <div class="main-content">
+      <!-- Danh sách bệnh viện bên trái -->
+      <div class="hospital-list">
+        <!-- Một ô bệnh viện -->
+        <div class="hospital-card">
+          <img src="img/PublicHospital/Tropical.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Tropical Diseases Hospital</h3>
+            <p>📍 764 Vo Van Kiet, Ward 1, District 5, Ho Chi Minh City</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hospital-card">
+          <img src="img/PublicHospital/Singapore.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Singapore General Hospital</h3>
+            <p>📍 Bukit Merah, Central Region, Singapore</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+                <div class="hospital-card">
+          <img src="img/PublicHospital/HospitalK.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Singapore General Hospital</h3>
+            <p>📍 Bukit Merah, Central Region, Singapore</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+                <div class="hospital-card">
+          <img src="img/PublicHospital/Tropical.png" class="hospital-logo" />
+          <div class="hospital-info">
+            <h3>Singapore General Hospital</h3>
+            <p>📍 Bukit Merah, Central Region, Singapore</p>
+            <p>⭐ 4.0</p>
+            <div class="buttons">
+              <button class="details">View Details</button>
+              <button class="book">Book Now</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Chi tiết bệnh viện bên phải -->
+      <div class="hospital-detail">
+        <img src="img/PublicHospital/Tropical.png" class="big-logo" />
+        <p>
+          It is a First-Class General Hospital and the final referral level under the Ho Chi Minh City Department of Health...
+        </p>
+        <h4>Picture</h4>
+        <div class="gallery">
+          <img src="img/PublicHospital/Picture1.png" />
+          <img src="img/PublicHospital/Picture2.png" />
+          <img src="img/PublicHospital/Picture3.png" />
+          <img src="img/PublicHospital/Picture4.png" />          
+        </div>
+      </div>
+    </div>
+
+    <!-- Phân trang -->
+    <div class="pagination">
+      <button disabled>&lt;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <span>...</span>
+      <button>99</button>
+      <button>&gt;</button>
+    </div>
+  </div>
+
+  <footer class="footer">         
+    <div class="footer-container">
+      <div class="footer-container"> 
+        <div class="footer-left">
+          <div class="logo">
+            <img src="img/Logo.png" alt="Logo" style="margin-left: 0;">
+            <span style="color: #00bfff; font-weight: bold;">TCP</span>
+          </div>
+          <p><strong>Address:</strong> 236/29/18 Dien Bien Phu Street - Ward 17 - Binh Thanh District - Ho Chi Minh City.</p>
+          <p><strong>Website:</strong> <a href="https://medpro.vn">https://medpro.vn</a></p>
+          <p><strong>Email:</strong> cskh@medpro.vn</p>
+          <p><strong>Phone Number:</strong> (028) 710 78098</p>
+        </div>
+        
+        <div class="footer-right" >
+          <div class="footer-row">
+            <div class="footer-column">
+              <h3 class="footer-title">medical services</h3>
+              <ul>
+                <li>Book an On-site Appointment</li>
+                <li>Book by Doctor</li>
+                <li>Video Call with a Doctor</li>
+                <li>Schedule a Lab Test</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">medical facility</h3>
+              <ul>
+                <li>Public Hospital</li>
+                <li>Private Hospital</li>
+                <li>Clinic</li>
+                <li>Private Practice</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Instructions</h3>
+              <ul>
+                <li>Install the App</li>
+                <li>Book an Appointment</li>
+                <li>Video Consultation</li>
+                <li>Refund Process</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="footer-row">
+            <div class="footer-column">
+              <h3 class="footer-title">Contact for Partnership</h3>
+              <ul>
+                <li>Join TCP</li>
+                <li>Corporate Health Check-up</li>
+                <li>Advertising</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">News</h3>
+              <ul>
+                <li>Service News</li>
+                <li>Healthcare News</li>
+                <li>Everyday Health Tips</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">About Medpro</h3>
+              <ul>
+                <li>About Us</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 – All rights reserved by TCP Application Joint Stock Company</p>
+      </div>
+  </footer>
+          
+          
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const titles = document.querySelectorAll('.footer-title');
+      titles.forEach(function (title) {
+        title.addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

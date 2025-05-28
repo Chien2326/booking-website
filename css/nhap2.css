@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #003366;
+    margin-bottom: 30px;
+  }
+  
+  .doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 240px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Giữ toàn bộ hình */
+    background-color: #eaf6ff;
+  }
+  
+  .review-bar {
+    background-color: #f0f8ff;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info {
+    padding: 10px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .info h3 {
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .info p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  button {
+    background: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #007acc;
+  }
+  
+  .view-all {
+    margin-top: 25px;
+  }
+  
+  .view-all a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

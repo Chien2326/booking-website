@@ -1,0 +1,529 @@
+
+* {
+    margin: 0; /* Xóa khoảng cách mặc định */
+    padding: 0; /* Xóa padding mặc định */
+    box-sizing: border-box; /* Tính cả padding, border vào width/height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font chữ tổng thể */
+    margin: 0; /* Xóa margin mặc định */
+    background-color: #f2f7fc; /* Màu nền tổng */
+}
+
+/* ============= */
+
+.navbar {
+    background-color: #eaf6ff; /* Nền xanh nhạt */
+    padding: 10px 20px; /* Khoảng cách trong navbar */
+    border-bottom: 1px solid #ccc; /* Viền dưới navbar */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar-top {
+    display: flex; /* Dùng flex để canh hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Các phần tử 2 bên */
+}
+
+
+.logo {
+    display: flex; /*Flex cho logo và text cùng hàng*/
+    align-items: center; /* Căn giữa logo */
+}
+
+.logo img {
+    width: 50px; /*Kích thước ảnh logo*/ 
+    height: 50px;
+    margin-right: 8px; /* Khoảng cách ảnh và text */
+    margin-left: 50px; /* Khoảng cách bên trái logo */
+}
+
+
+.social-links {
+    display: flex; /* Các icon mạng xã hội cùng hàng */
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa các icon */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+.social-links i {
+    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+}
+
+.buttons {
+    display: flex; /* Các nút cùng hàng */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.buttons button {
+    padding: 5px 15px; /* Kích thước nút */
+    border: none; /* Không viền */
+    border-radius: 20px; /* Bo góc nút */
+    cursor: pointer; /* Đổi con trỏ khi hover */
+    font-weight: bold; /* Chữ đậm */
+}
+
+.buttons a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: black;
+}
+
+
+.login-btn {
+    background-color: #00bfff; /* Nút login màu xanh dương */
+    color: white; /* Chữ trắng */
+}
+
+.register-btn {
+    background-color: white; /* Nút register nền trắng */
+    border: 1px solid #000; /* Viền đen */
+}
+
+/* =================== Navbar Menu dưới =================== */
+.navbar-menu {
+    margin-top: 10px; /* Cách navbar-top 1 chút */
+    display: flex; /* Các menu-item cùng hàng */
+    justify-content: center; /* Căn giữa */
+    gap: 20px; /* Khoảng cách menu */
+    position: relative; /* Để dropdown phụ thuộc */
+}
+
+.menu-item {
+    position: relative; /* Để dropdown phụ thuộc */
+}
+
+.menu-item a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: black; /* Màu chữ đen */
+    font-weight: bold; /* Chữ đậm */
+    font-size: 14px; /* Cỡ chữ */
+}
+
+/* Dropdown container */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;         /* Bo góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    overflow: hidden;           /* Bo góc bên trong */
+    z-index: 100;
+    animation: fadeIn 0.2s ease-in-out; /* Hiệu ứng xuất hiện */
+}
+
+/* Mục trong dropdown */
+.dropdown a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover từng mục */
+.dropdown a:hover {
+    background-color: #f7f7f7;
+    color: #007bff; /* Đổi màu khi hover */
+}
+
+/* Hiện dropdown khi hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Hiệu ứng fadeIn (CSS animation) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+  /* Ẩn hamburger mặc định */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Menu mặc định hiển thị dạng hàng ngang */
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 912px) {
+    .navbar-menu {
+        display: none; /* Ẩn menu khi thu nhỏ */
+        flex-direction: column;
+        background-color: white;
+        padding: 10px 20px;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Hiện khi nhấn hamburger */
+    }
+
+    .hamburger {
+        display: block; /* Hiện nút 3 gạch */
+        
+    }
+
+    .social-links {
+        display: none; /* Ẩn social khi thu nhỏ (có thể cho xuống cuối menu nếu muốn) */
+    }
+}
+
+
+/* =================== Notification Bar =================== */
+.notification-bar {
+    background-color: orange; /* Nền cam */
+    color: white; /* Chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+    padding: 8px 0; /* Trên dưới 8px */
+    font-weight: bold; /* Chữ đậm */
+    font-size: 14px; /* Cỡ chữ */
+    
+}
+
+.marquee {
+    background-color: #ffa726; /* Màu cam đậm hơn */
+    color: white; /* Chữ trắng */
+    font-weight: bold; /* Chữ đậm */
+    padding: 8px 0; /* Padding trên dưới */
+}
+
+/*  */
+.hero-section {
+    background-image: url(/AppoinmentBooking/img/bannerPublicHopital.png); /* Ảnh nền banner */
+    background-size: cover; /* Ảnh không méo */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+        width: 100%; /* Full chiều rộng */
+    height: 401px; /* Chiều cao banner */
+  text-align: center;
+  padding: 60px 20px 80px;
+  border-bottom-left-radius: 100% 5%;
+  border-bottom-right-radius: 100% 5%;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  color: #00b0f0;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.search-box {
+    margin: 20px auto; /* Cách trên dưới và căn giữa */
+    width: 40%; /* Độ rộng ô tìm kiếm */
+    position: relative; /* Cho icon nằm trong */
+}
+
+.search-box input {
+    width: 100%; /* Chiếm hết ô search-box */
+    padding: 15px 15px 15px 45px; /* Padding, chừa chỗ cho icon */
+    border-radius: 12px; /* Bo góc input */
+    border: 1px solid #ccc; /* Viền mờ */
+    font-size: 16px; /* Cỡ chữ */
+}
+
+.search-box i {
+    position: absolute; /* Icon nằm tự do trong input */
+    top: 50%; /* Giữa chiều cao */
+    left: 15px; /* Cách trái 15px */
+    transform: translateY(-50%); /* Đúng chính giữa */
+    color: gray; /* Màu xám nhạt */
+    font-size: 18px; /* Cỡ icon */
+}
+
+/* ========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page-title {
+  color: #1e90ff;
+  font-size: 22px;
+}
+
+.back-arrow {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #1e90ff;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hospital-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hospital-card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  gap: 15px;
+}
+
+.hospital-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.hospital-info {
+  flex: 1;
+}
+
+.hospital-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.hospital-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 8px;
+}
+
+.details,
+.book {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book {
+  background: #00bfff;
+}
+
+.hospital-detail {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.big-logo {
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #1e90ff;
+  color: white;
+}
+
+/* ==================== */
+.footer {
+    background-color: #eaf6fd;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 40px;
+  color: #333;
+}
+
+.footer-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #00b2ff;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-left a {
+  color: #00b2ff;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00b2ff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-title::after {
+  content: "▶";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.3s;
+}
+
+.footer-title.active::after {
+  transform: rotate(90deg);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-column ul {
+    display: none;
+  }
+
+  .footer-title.active + ul {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.footer-title::after {
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .footer-title::after {
+    content: "▶";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.3s;
+  }
+
+  .footer-title.active::after {
+    transform: rotate(90deg);
+  }
+}
+
+
+  
+  .footer-bottom {
+    background-color: #00b2ff;
+    text-align: center;
+    padding: 15px 10px;
+    color: white;
+    font-size: 14px;
+  }
