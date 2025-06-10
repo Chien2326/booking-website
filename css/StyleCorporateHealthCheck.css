@@ -698,7 +698,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url('../img/CorporateHealthCheckup/iconMenuWhyShouldYouTrustUs.png') no-repeat center center;
+  background: url(../img/CorporateHealthCheckup/iconMenuWhyShouldYouTrustUs.png) no-repeat center center;
   background-size: contain;
   margin-right: 10px;
   flex-shrink: 0;

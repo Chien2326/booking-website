@@ -139,50 +139,57 @@
     <!-- ==================================Book a Medical Appointment Online======================================= -->
     <!-- ---------------------------------------------------------------------------------------------------------- -->
     <div class="container">
-      <h2>Book a Medical Appointment Online</h2>
-      <p class="subtitle">
-        <em>(To book an appointment via the website, please enter complete and accurate information)</em>
-      </p>
-      <form>
-        <label>Full Name <span>*</span></label>
-        <input type="text" placeholder="Enter full name" required>
+  <h2>Book a Medical Appointment Online</h2>
+  <p class="subtitle">
+    <em>(To book an appointment via the website, please enter complete and accurate information)</em>
+  </p>
+  <form id="appointmentForm">
+    <label>Full Name <span>*</span></label>
+    <input type="text" placeholder="Enter full name" required>
 
-        <label>Date of Birth <span>*</span></label>
-        <input type="date" required>
+    <label>Date of Birth <span>*</span></label>
+    <input type="date" required>
 
-        <label>Phone Number <span>*</span></label>
-        <input type="tel" placeholder="Enter phone number" required>
+    <label>Phone Number <span>*</span></label>
+    <input type="tel" placeholder="Enter phone number" required>
 
-        <label>Address <span>*</span></label>
-        <input type="text" placeholder="Enter address" required>
+    <label>Address <span>*</span></label>
+    <input type="text" placeholder="Enter address" required>
 
-        <label>Province / City <span>*</span></label>
-        <select required>
-          <option value="">-- Select --</option>
-          <option>Nghe An</option>
-          <option>Ha Noi</option>
-          <option>Ho Chi Minh City</option>
-        </select>
+    <label>Province / City <span>*</span></label>
+    <select required>
+      <option value="">-- Select --</option>
+      <option>Nghe An</option>
+      <option>Ha Noi</option>
+      <option>Ho Chi Minh City</option>
+    </select>
 
-        <label>Appointment Date <span>*</span></label>
-        <input type="date" required>
+    <label>Appointment Date <span>*</span></label>
+    <input type="date" required>
 
-        <label>Facility <span>*</span></label>
-        <select required>
-          <option value="">-- Select Facility --</option>
-          <option>Facility 1</option>
-          <option>Facility 2</option>
-        </select>
+    <label>Facility <span>*</span></label>
+    <select required>
+      <option value="">-- Select Facility --</option>
+      <option>Facility 1</option>
+      <option>Facility 2</option>
+    </select>
 
-        <label>Email</label>
-        <input type="email" placeholder="example@gmail.com">
+    <label>Email</label>
+    <input type="email" placeholder="example@gmail.com">
 
-        <label>Message</label>
-        <textarea placeholder="Your message here..."></textarea>
+    <label>Message</label>
+    <textarea placeholder="Your message here..."></textarea>
 
-        <button type="submit">Submit Documents</button>
-      </form>
-    </div>
+    <button type="submit">Submit Documents</button>
+  </form>
+
+  <p id="successMessage" style="color: green; font-weight: bold; display: none; margin-top: 15px;">
+    <i class="fa-solid fa-check"></i> Appointment registration successful!
+  </p>
+</div>
+
+<script src="js/appointment/appointment.js"></script>
+
     <!-- ----------------------------------------------------------------------------------------------- -->
     <!-- ======================================footer=================================================== -->
     <!-- ------------------------------------Chân trang------------------------------------------------- -->

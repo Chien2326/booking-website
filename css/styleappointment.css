@@ -543,7 +543,9 @@ body {
 }
 
 /*  */
-
+p i {
+  color: green; /* Màu xanh lá */
+}
 .container {
   
   max-width: 500px;
