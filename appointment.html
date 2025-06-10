@@ -13,252 +13,284 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-
-  <div class="navbar">
-
-        <div class="navbar-top">
-
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
-                <span style="color: #00bfff; font-weight: bold;">TCP</span>
-            </div>
-            <!-- Social links -->
-            <div class="social-links">
-                <span><i class="fa-brands fa-facebook"></i> Facebook</span>
-                <span>|</span>
-                <span>Zalo 0363607229</span>
-                <span>|</span>
-                <span><i class="fa-brands fa-tiktok"></i> TikTok</span>
-            </div>
-
-            
-
-            <!-- Buttons -->
-            <div class="buttons">
-                <button class="login-btn"><a href="login.html">Login</a></button>
-                <button class="register-btn"><a href="register.html">Register</a></button>
-            </div>
-
-            <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- ================================================Header============================================ -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <header class="header1">
+      <div class="top-bar">
+        <div class="logo">
+          <a href="index.html"><img src="img/home/Logo.png" alt="Logo"></a>
+          <span>TCP</span>
         </div>
-
-        <hr style="margin: 10px 150px;">
-
-        <!-- Menu -->
-        <div class="navbar-menu" id="navbarMenu">
-            <div class="menu-item">
-                <a href="#">medical facility ▾</a>
-                <div class="dropdown">
-                    <a href="#">Facility 1</a>
-                    <a href="#">Facility 2</a>
-                </div>
-            </div>
-            <div class="menu-item">
-                <a href="#">medical services ▾</a>
-                <div class="dropdown">
-                    <a href="#">Service 1</a>
-                    <a href="#">Service 2</a>
-                </div>  
-            </div>
-            <div class="menu-item">
-                <a href="#">corporate health check-up ▾</a>
-                <div class="dropdown">
-                    <a href="CorporateHeadthCheck.html">Check-up 1</a>
-                    <a href="#">Check-up 2</a>
-                </div>
-            </div>
-            <div class="menu-item">
-                <a href="#">Health news ▾</a>
-                <div class="dropdown">
-                    <a href="#">News 1</a>
-                    <a href="#">News 2</a>
-                </div>
-            </div>
-            <div class="menu-item">
-                <a href="#">Instructions ▾</a>
-                <div class="dropdown">
-                    <a href="#">Instruction 1</a>
-                    <a href="#">Instruction 2</a>
-                </div>
-            </div>
+        <div class="social">
+          <a href="https://www.facebook.com/?locale=vi_VN"><i class="fab fa-facebook"></i> Facebook</a>
+          <span class="divider"></span>
+          <a href="https://zalo.me/pc">Zalo 0999888777</a>
+          <span class="divider"></span>
+          <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
+        <div class="auth-buttons auth-area">
+          <button class="login"><a href="login.html">Login</a></button>
+          <button class="register"><a href="register.html">Register</a></button>
+        </div>
+        <div class="account-btn">
+          <button class="btn-account auth-area"><a href="login.html" class="auth-area">Account</a></button>
+          <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>  
+      </div>
+      <script src="js/index/lg.js"></script>
+      <hr style="margin: auto 190px;">
+      <nav class="nav-bar">
+        <nav class="desktop-navbar">
+          <ul class="nav-menu">
+            <li class="dropdown">
+              <a href="#">Medical Facility </a>
+              <ul class="dropdown-menu">
+                <li><a href="publichopital.html">Public hospital</a></li>
+                <li><a href="#">private hospital</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Medical Services </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Book at the facility</a></li>
+                <li><a href="#">After-hours booking</a></li>
+              </ul>
+            </li>
+            <li><a href="corporatehealthcheck.html">Corporate Health Check-up</a></li>
+            <li class="dropdown">
+              <a href="#">Health News </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Service News</a></li>
+                <li><a href="#">Medical News</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Instructions </a>
+              <ul class="dropdown-menu">
+                <li><a href="intruction.html">Book an Appointment</a></li>
+                <li><a href="#">Medical Visit Procedure</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Sidebar mobile -->
+    <div class="mobile-sidebar">
+      <div class="sidebar-content">
+        <span class="close-btn">&times;</span>
+        <ul class="sidebar-menu">
+          <li class="dropdown">
+            <div class="dropdown-toggle">Medical Facility <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="publichopital.html">Public hospital</a></li>
+              <li><a href="#">private hospital</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Medical Services <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="#">Book at the facility</a></li>
+              <li><a href="#">After-hours booking</a></li>
+            </ul>
+          </li>            
+          <li><a href="corporatehealthcheck.html">Corporate Health Check-up</a></li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Health News <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="#">Service News</a></li>
+              <li><a href="#">Medical News</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Instructions <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="intruction.html">Book an Appointment</a></li>
+              <li><a href="#">Medical Visit Procedure</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-
-      <script>
-    const hamburger = document.getElementById("hamburger");
-    const navbarMenu = document.getElementById("navbarMenu");
-
-    hamburger.addEventListener("click", () => {
-        navbarMenu.classList.toggle("active");
-    });
-</script>
-
+    <script src="js/index/muiten.js"></script>
+    <script src="js/index/header1.js"></script>
     <!-- Notification bar -->
     <div class="notification-bar">
-        <marquee behavior="scroll" direction="left" scrollamount="5">
-            📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </marquee>
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </marquee>	
     </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- ==================================Book a Medical Appointment Online======================================= -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+      <h2>Book a Medical Appointment Online</h2>
+      <p class="subtitle">
+        <em>(To book an appointment via the website, please enter complete and accurate information)</em>
+      </p>
+      <form>
+        <label>Full Name <span>*</span></label>
+        <input type="text" placeholder="Enter full name" required>
 
+        <label>Date of Birth <span>*</span></label>
+        <input type="date" required>
 
-  <div class="container">
-    <h2>Book a Medical Appointment Online</h2>
-    <p class="subtitle">
-      <em>(To book an appointment via the website, please enter complete and accurate information)</em>
-    </p>
-    <form>
-      <label>Full Name <span>*</span></label>
-      <input type="text" placeholder="Enter full name" required>
+        <label>Phone Number <span>*</span></label>
+        <input type="tel" placeholder="Enter phone number" required>
 
-      <label>Date of Birth <span>*</span></label>
-      <input type="date" required>
+        <label>Address <span>*</span></label>
+        <input type="text" placeholder="Enter address" required>
 
-      <label>Phone Number <span>*</span></label>
-      <input type="tel" placeholder="Enter phone number" required>
+        <label>Province / City <span>*</span></label>
+        <select required>
+          <option value="">-- Select --</option>
+          <option>Nghe An</option>
+          <option>Ha Noi</option>
+          <option>Ho Chi Minh City</option>
+        </select>
 
-      <label>Address <span>*</span></label>
-      <input type="text" placeholder="Enter address" required>
+        <label>Appointment Date <span>*</span></label>
+        <input type="date" required>
 
-      <label>Province / City <span>*</span></label>
-      <select required>
-        <option value="">-- Select --</option>
-        <option>Nghệ An</option>
-        <option>Hà Nội</option>
-        <option>TP. Hồ Chí Minh</option>
-      </select>
+        <label>Facility <span>*</span></label>
+        <select required>
+          <option value="">-- Select Facility --</option>
+          <option>Facility 1</option>
+          <option>Facility 2</option>
+        </select>
 
-      <label>Appointment Date <span>*</span></label>
-      <input type="date" required>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
 
-      <label>Facility <span>*</span></label>
-      <select required>
-        <option value="">-- Select Facility --</option>
-        <option>Cơ sở 1</option>
-        <option>Cơ sở 2</option>
-      </select>
+        <label>Message</label>
+        <textarea placeholder="Your message here..."></textarea>
 
-      <label>Email</label>
-      <input type="email" placeholder="example@gmail.com">
-
-      <label>Message</label>
-      <textarea placeholder="Your message here..."></textarea>
-
-      <button type="submit">Submit Documents</button>
-    </form>
-  </div>
-
-
- <footer class="footer">
-            
-
-
-<div class="footer-container">
-  <div class="footer-container">
-              
-              <div class="footer-left">
-                <div class="logo">
-                  <img src="img/Logo.png" alt="Logo" style="margin-left: 0;">
-                  <span style="color: #00bfff; font-weight: bold;">TCP</span>
-                </div>
-                <p><strong>Address:</strong> 236/29/18 Dien Bien Phu Street - Ward 17 - Binh Thanh District - Ho Chi Minh City.</p>
-                <p><strong>Website:</strong> <a href="https://medpro.vn">https://medpro.vn</a></p>
-                <p><strong>Email:</strong> cskh@medpro.vn</p>
-                <p><strong>Phone Number:</strong> (028) 710 78098</p>
-              </div>
-              
-              <div class="footer-right" >
-                <div class="footer-row">
-                  <div class="footer-column">
-                    <h3 class="footer-title">medical services</h3>
-                    <ul>
-                      <li>Book an On-site Appointment</li>
-                      <li>Book by Doctor</li>
-                      <li>Video Call with a Doctor</li>
-                      <li>Schedule a Lab Test</li>
-                    </ul>
-                  </div>
-                  <div class="footer-column">
-                    <h3 class="footer-title">medical facility</h3>
-                    <ul>
-                      <li>Public Hospital</li>
-                      <li>Private Hospital</li>
-                      <li>Clinic</li>
-                      <li>Private Practice</li>
-                    </ul>
-                  </div>
-                  <div class="footer-column">
-                    <h3 class="footer-title">Instructions</h3>
-                    <ul>
-                      <li>Install the App</li>
-                      <li>Book an Appointment</li>
-                      <li>Video Consultation</li>
-                      <li>Refund Process</li>
-                    </ul>
-                  </div>
-                </div>
-              
-                <div class="footer-row">
-                  <div class="footer-column">
-                    <h3 class="footer-title">Contact for Partnership</h3>
-                    <ul>
-                      <li>Join TCP</li>
-                      <li>Corporate Health Check-up</li>
-                      <li>Advertising</li>
-                      <li>Careers</li>
-                    </ul>
-                  </div>
-                  <div class="footer-column">
-                    <h3 class="footer-title">News</h3>
-                    <ul>
-                      <li>Service News</li>
-                      <li>Healthcare News</li>
-                      <li>Everyday Health Tips</li>
-                    </ul>
-                  </div>
-                  <div class="footer-column">
-                    <h3 class="footer-title">About Medpro</h3>
-                    <ul>
-                      <li>About Us</li>
-                      <li>Terms of Service</li>
-                      <li>Privacy Policy</li>
-                      <li>Terms of Use</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
+        <button type="submit">Submit Documents</button>
+      </form>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ======================================footer=================================================== -->
+    <!-- ------------------------------------Chân trang------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <footer class="footer">         
+      <div class="footer-container"> 
+        <div class="footer-left">
+          <div class="logo">
+            <img src="img/home/Logo.png" alt="Logo" style="margin-left: 0;">
+            <span style="color: #00bfff; font-weight: bold;">TCP</span>
+          </div>
+          <p><strong>Address:</strong> 236/29/18 Dien Bien Phu Street - Ward 17 - Binh Thanh District - Ho Chi Minh City.</p>
+          <p><strong>Website:</strong> <a href="index.html">https://tcp.vn</a></p>
+          <p><strong>Email:</strong> cskh@tcp.vn</p>
+          <p><strong>Phone Number:</strong> (028) 710 78098</p>
+        </div>                
+        <div class="footer-right" >
+          <div class="footer-row">
+            <div class="footer-column">
+              <h3 class="footer-title">medical services</h3>
+              <ul>
+                <li>Book an On-site Appointment</li>
+                <li>Book by Doctor</li>
+                <li>Video Call with a Doctor</li>
+                <li>Schedule a Lab Test</li>
+              </ul>
             </div>
+            <div class="footer-column">
+              <h3 class="footer-title">medical facility</h3>
+              <ul>
+                <li>Public Hospital</li>
+                <li>Private Hospital</li>
+                <li>Clinic</li>
+                <li>Private Practice</li>
+              </ul>
             </div>
-
-          
-            <div class="footer-bottom">
-              <p>© 2025 – All rights reserved by TCP Application Joint Stock Company</p>
+            <div class="footer-column">
+              <h3 class="footer-title">Instructions</h3>
+              <ul>
+                <li>Install the App</li>
+                <li>Book an Appointment</li>
+                <li>Video Consultation</li>
+                <li>Refund Process</li>
+              </ul>
             </div>
-          </footer>
-      
-      
-          
-          
-  
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const titles = document.querySelectorAll('.footer-title');
-      titles.forEach(function (title) {
-        title.addEventListener('click', function () {
-          this.classList.toggle('active');
-        });
-      });
-    });
-  </script>
-
+          </div>
+        
+          <div class="footer-row">
+            <div class="footer-column">
+              <h3 class="footer-title">Contact for Partnership</h3>
+              <ul>
+                <li>Join TCP</li>
+                <li>Corporate Health Check-up</li>
+                <li>Advertising</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">News</h3>
+              <ul>
+                <li>Service News</li>
+                <li>Healthcare News</li>
+                <li>Everyday Health Tips</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">About TCP</h3>
+              <ul>
+                <li>About Us</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><i class="fa-regular fa-copyright"></i> 2025 – All rights reserved by TCP Application Joint Stock Company</p>
+      </div>
+    </footer>   
+    <script src="js/index/footer.js"></script>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ======================================Menu Bottom=================================================== -->
+    <!-- --------------------------------Menu bên dưới (Mobile, Ipad)---------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <section class="mobile-nav">
+      <a href="#home" class="nav-item active">
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#instructions" class="nav-item">
+        <i class="fa fa-book"></i>
+        <span>Instructions</span>
+      </a>
+      <a href="#appointment" class="nav-item">
+        <i class="fa fa-ticket"></i>
+        <span>Appointment Ticket</span>
+      </a>
+      <a href="#notifications" class="nav-item">
+        <i class="fa fa-bell"></i>
+        <span>Notifications</span>
+      </a>
+      <a href="#records" class="nav-item">
+        <i class="fa fa-folder"></i>
+        <span>Medical Records</span>
+      </a>
+    </section>
 </body>
 </html>

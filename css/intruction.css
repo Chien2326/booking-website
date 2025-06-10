@@ -514,8 +514,6 @@ body {
   }
 }
 
-
-
 /* =================== Notification Bar =================== */
 .notification-bar {
     background-color: orange; /* Nền cam */
@@ -542,86 +540,147 @@ body {
     padding: 8px 0; /* Padding trên dưới */
 }
 
-/*  */
-
+/* ================================ */
 .container {
-  
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 30px 30px 40px 30px; /* Thêm padding dưới */
-  border-radius: 10px;
-  color: #fff;
-  box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.container h2 {
-  text-align: center;
-  color: #00aaff;
-  margin-bottom: 5px;
+.banner {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 52px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.subtitle {
-  text-align: center;
-  font-size: 13px;
-  color: #EA6666;
-  margin-bottom: 25px;
+.banner {
+    width: 100%;
+    height: 358px; 
+    text-align: center;
+    padding: 40px 20px; 
+    background-image: url(../img/instruction/bannerPublicHopital.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
-form {
-  background-color: #5fa8af;
-  display: flex;
-  padding: 30px 30px 40px 30px; /* Thêm padding dưới */
-  flex-direction: column;
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
+.banner h1 {
+    font-size: 32px;
+    color: #007bff;
+    margin: 0;
+    font-weight: 700;
 }
 
-form label span {
-  color: red;
+.banner p {
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0 0;
 }
 
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-form textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-form button {
-  align-self: flex-end; /* Đảm bảo nút nằm bên phải nhưng không tràn */
-  background-color: #00ccff;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-form button:hover {
-  background-color: #0099cc;
+.banner .highlight {
+    font-weight: 700;
+    color: #007bff;
 }
 
 
 
-/* ============ */
-.footer {
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tab-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+main {
+    border: 1px solid #79b0eb;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    font-size: 14px;
+    color: #003553;
+    margin-bottom: 8px;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    margin-top: 8px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+/* ============================== */
+ .footer {
     background-color: #eaf6fd;
     font-family: Arial, sans-serif;
   }
@@ -719,7 +778,7 @@ form button:hover {
     display: none;
   }
 
-  .footer-title.active + ul {
+  .footer-title.active + .footer-column ul {
     display: block;
     margin-top: 10px;
   }
@@ -742,6 +801,8 @@ form button:hover {
   transform: rotate(90deg); /* Xoay sang hướng xuống */
 }
 }
+
+
   
   .footer-bottom {
     background-color: #00b2ff;
@@ -784,6 +845,9 @@ form button:hover {
   color: #00bfff;
 }
 
+.mobile-nav {
+  margin-bottom: 0;
+}
 /* Chỉ hiển thị mobile-nav trên thiết bị nhỏ */
 @media (min-width: 920px) {
   .mobile-nav {
@@ -797,3 +861,4 @@ form button:hover {
     padding-bottom: 60px;
   }
 }
+

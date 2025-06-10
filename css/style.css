@@ -11,186 +11,512 @@ body {
     background-color: #f2f7fc; /* Màu nền tổng */
 }
 
+/*  */
+.user-name{
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.logout-btn {
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #0099cc;
+}
+
 /* =================== Navbar =================== */
-.navbar {
-    background-color: #eaf6ff; /* Nền xanh nhạt */
-    padding: 10px 20px; /* Khoảng cách trong navbar */
-    border-bottom: 1px solid #ccc; /* Viền dưới navbar */
-    position: sticky;
-    top: 0;
-    z-index: 99;
+.header1 {
+  background-color: #E8F4FD;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top:0;
+  z-index: 1000;
 }
 
-.navbar-top {
-    display: flex; /* Dùng flex để canh hàng ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: space-between; /* Các phần tử 2 bên */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
-
 
 .logo {
-    display: flex; /*Flex cho logo và text cùng hàng*/
-    align-items: center; /* Căn giữa logo */
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    width: 50px; /*Kích thước ảnh logo*/ 
-    height: 50px;
-    margin-right: 8px; /* Khoảng cách ảnh và text */
-    margin-left: 50px; /* Khoảng cách bên trái logo */
+  width: 40px;
+  height: 40px;
 }
 
-
-.social-links {
-    display: flex; /* Các icon mạng xã hội cùng hàng */
-    align-items: center;
-    gap: 10px; /* Khoảng cách giữa các icon */
-    font-size: 14px; /* Kích thước chữ */
+.logo span {
+  color: #00a9dc;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 8px;
 }
 
-.social-links i {
-    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
 }
 
-.buttons {
-    display: flex; /* Các nút cùng hàng */
-    gap: 10px; /* Khoảng cách giữa các nút */
+.social a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.buttons button {
-    padding: 5px 15px; /* Kích thước nút */
-    border: none; /* Không viền */
-    border-radius: 20px; /* Bo góc nút */
-    cursor: pointer; /* Đổi con trỏ khi hover */
-    font-weight: bold; /* Chữ đậm */
+.social a:hover {
+  color: #00a9dc; 
 }
 
-.buttons a {
-    text-decoration: none; /* Xóa gạch chân */
-    color: black;
+.social img {
+  width: 20px;
+  height: 20px;
 }
 
-
-.login-btn {
-    background-color: #00bfff; /* Nút login màu xanh dương */
-    color: white; /* Chữ trắng */
+.divider {
+  height: 20px;
+  width: 1px;
+  background-color: #000;
 }
 
-.register-btn {
-    background-color: white; /* Nút register nền trắng */
-    border: 1px solid #000; /* Viền đen */
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: 1px solid #00a9dc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* =================== Navbar Menu dưới =================== */
-.navbar-menu {
-    margin-top: 10px; /* Cách navbar-top 1 chút */
-    display: flex; /* Các menu-item cùng hàng */
-    justify-content: center; /* Căn giữa */
-    gap: 20px; /* Khoảng cách menu */
-    position: relative; /* Để dropdown phụ thuộc */
+.login {
+  background-color: #00a9dc;
+  color: white;
 }
 
-.menu-item {
-    position: relative; /* Để dropdown phụ thuộc */
+.register {
+  background-color: white;
+  color: black;
 }
 
-.menu-item a {
-    text-decoration: none; /* Xóa gạch chân */
-    color: black; /* Màu chữ đen */
-    font-weight: bold; /* Chữ đậm */
-    font-size: 14px; /* Cỡ chữ */
+.auth-buttons a {
+    text-decoration: none; 
+    color: black; 
 }
 
-/* Dropdown container */
-.dropdown {
+.auth-buttons .login:hover {
+  background-color: #00bfff; 
+}
+
+.auth-buttons .register:hover {
+  background-color: #00bfff;
+}
+
+.account-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.account-btn a:hover {
+  color: #00a9dc; 
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-bar i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+.account-btn {
+  display: none;
+}
+/* Mobile Responsive */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  transition: right 0.3s ease;
+}
+
+.mobile-sidebar.active {
+  right: 0;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content .close-btn {
+  font-size: 26px;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-content ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Dropdown menu */
+.sidebar-menu .dropdown-menu {
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.sidebar-menu .dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.sidebar-menu .dropdown-toggle {
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Dropdown menu */
+.nav-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-menu .dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-menu .dropdown-menu li a {
+  color: #333;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown > a::after {
+  content: "\f078"; /* Mã unicode của icon fa-chevron-down */
+  font-family: "Font Awesome 6 Free"; /* hoặc "Font Awesome 5 Free" tùy phiên bản */
+  font-weight: 900; /* 400 cho regular, 900 cho solid */
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li:hover > a {
+  background-color: #e0f7ff;
+  color: #00bcd4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 188, 212, 0.2);
+}
+
+/* Hover trong dropdown menu */
+.nav-menu .dropdown-menu li a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu .dropdown-menu li:hover > a {
+  background-color: #f0f8ff;
+  color: #00bcd4;
+  box-shadow: inset 2px 0 0 #00bcd4;
+}
+
+.nav-menu li,
+.nav-menu .dropdown-menu li {
+  transition: all 0.3s ease;
+}
+
+/* Dropdown toggle styling */
+.sidebar-menu .dropdown-toggle {
+  cursor: pointer;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover effect like desktop */
+.sidebar-menu .dropdown-toggle:hover {
+  background-color: #e0f7ff;
+  color: #00bcd4;
+  box-shadow: 0 2px 6px rgba(0, 188, 212, 0.2);
+}
+
+/* Arrow style and rotation */
+.sidebar-menu .dropdown .arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.sidebar-menu .dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.icon-rotate {
+  transition: transform 0.3s ease;
+}
+
+.icon-rotate.rotated {
+  transform: rotate(180deg);
+}
+
+/* Dropdown item hover */
+.sidebar-menu .dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.sidebar-menu .dropdown-menu li:hover {
+  background-color: #f0f8ff;
+  color: #00bcd4;
+}
+
+.sidebar-menu .dropdown-toggle {
+  cursor: pointer;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover hiệu ứng đẹp */
+.sidebar-menu .dropdown-toggle:hover {
+  background-color: #e0f7ff;
+  color: #00bcd4;
+  box-shadow: 0 2px 6px rgba(0, 188, 212, 0.2);
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #e0f7ff;
+  color: #00bcd4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 188, 212, 0.2);
+}
+
+@media (max-width: 912px) {
+  hr {
+    display: none; /* Ẩn đường kẻ ngang */
+  }
+
+  .top-bar {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .social, .auth-buttons, .nav-bar {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    min-width: 180px;
-    border-radius: 8px;         /* Bo góc */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
-    overflow: hidden;           /* Bo góc bên trong */
-    z-index: 100;
-    animation: fadeIn 0.2s ease-in-out; /* Hiệu ứng xuất hiện */
-}
+  }
 
-/* Mục trong dropdown */
-.dropdown a {
-    display: block;
-    padding: 10px 16px;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
-}
+  .logo span {
+    font-size: 22px;
+    color: #00a9dc;
+  }
 
-/* Hover từng mục */
-.dropdown a:hover {
-    background-color: #f7f7f7;
-    color: #007bff; /* Đổi màu khi hover */
-}
-
-/* Hiện dropdown khi hover */
-.menu-item:hover .dropdown {
-    display: block;
-}
-
-/* Hiệu ứng fadeIn (CSS animation) */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-  /* Ẩn hamburger mặc định */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-/* Menu mặc định hiển thị dạng hàng ngang */
-.navbar-menu {
+  .account-btn {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .account-btn .btn-account {
+    background-color: #69d4ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+  }
+
+  body.logged-in .account-btn .btn-account {
+  background-color: #E8F4FD; /* ví dụ: xanh lá dịu */
+  }
+
+  .menu-icon {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .menu-icon div {
+    height: 3px;
+    background: black;
+  }
 }
 
-/* Responsive */
-@media screen and (max-width: 912px) {
-    .navbar-menu {
-        display: none; /* Ẩn menu khi thu nhỏ */
-        flex-direction: column;
-        background-color: white;
-        padding: 10px 20px;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa ảnh và chữ */
+}
 
-    .navbar-menu.active {
-        display: flex; /* Hiện khi nhấn hamburger */
-    }
+/* Ảnh */
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 40px; /* mặc định nhỏ hơn */
+  transition: all 0.3s ease;
+}
 
-    .hamburger {
-        display: block; /* Hiện nút 3 gạch */
-        
-    }
+/* Chữ */
+.logo span {
+  font-size: 20px;    /* mặc định cỡ vừa */
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
 
-    .social-links {
-        display: none; /* Ẩn social khi thu nhỏ (có thể cho xuống cuối menu nếu muốn) */
-    }
+@media (min-width: 768px) {
+  .logo img {
+    max-height: 60px; /* logo to hơn */
+  }
+
+  .logo span {
+    font-size: 28px;  /* chữ to hơn */
+  }
 }
 
 
 /* =================== Notification Bar =================== */
+
 .notification-bar {
     background-color: orange; /* Nền cam */
     color: white; /* Chữ trắng */
@@ -201,6 +527,14 @@ body {
     
 }
 
+.notification-bar i {
+  color: #8A8B8B;
+  margin-right: 10px;
+  transform: rotateY(180deg); /* Lật ngược chiều icon */
+  font-size: 18px; /* Lớn hơn */
+  font-weight: bold; /* Có thể không ảnh hưởng nhưng nên thêm */
+}
+
 .marquee {
     background-color: #ffa726; /* Màu cam đậm hơn */
     color: white; /* Chữ trắng */
@@ -208,7 +542,7 @@ body {
     padding: 8px 0; /* Padding trên dưới */
 }
 
-/* =================== Header (Banner) =================== */
+/* =================== Header2 (Banner) =================== */
 .headerme {
     width: 100%;
     height: 500px;
@@ -219,7 +553,7 @@ body {
     height: 400px; /* Chiều cao banner */
     text-align: center; /* Căn giữa nội dung */
     padding: 40px 20px; /* Khoảng cách trong */
-    background-image: url(/AppoinmentBooking/img/Banner.png); /* Ảnh nền banner */
+    background-image: url(../img/home/Banner.png); /* Ảnh nền banner */
     background-size: cover; /* Ảnh không méo */
     background-position: center; /* Căn giữa ảnh */
     background-repeat: no-repeat; /* Không lặp lại ảnh */
@@ -261,22 +595,137 @@ body {
     line-height: 1.6; /* Dãn dòng */
 }
 
-@media (max-width: 768px) {
-    .info-text {
-      visibility: hidden;   
-    }
-    .header{
-      width: 100%; /* Full chiều rộng */
-      height: 400px; /* Chiều cao banner */
-      text-align: center; /* Căn giữa nội dung */
-      padding: 40px 20px; /* Khoảng cách trong */
-      background-image: url(/AppoinmentBooking/img/BannerMobile.png); /* Ảnh nền banner */
-      background-size: cover; /* Ảnh không méo */
-      background-position: center; /* Căn giữa ảnh */
-      background-repeat: no-repeat; /* Không lặp lại ảnh */
-    }
-}
+
 /* Ẩn trên di động */
+.background-container1 {
+      width: 100%;
+      height: 360px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    
+      .background-image1 {
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #fff 100%),
+    url(../img/home/BannerMobile.png) no-repeat center center;
+  background-size: cover;
+}
+
+    
+
+  .overlay1 {
+    position: absolute;
+    top: 30px; /* Nhích lên gần đỉnh ảnh */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .header-text1 {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #062B5B;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .search-box1 {
+    margin: 0 auto 20px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  .search-box1 input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 14px;
+  }
+
+  .search-box1 i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #888;
+  }
+
+  .scroll-container1 {
+    top: -90px; /* Đẩy xuống dưới ảnh */
+    width: 440px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0px 12px; /* để item nằm thấp hơn dưới ảnh */
+    position: relative;
+  }
+
+  .scroll-container1::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pages1 {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+  }
+
+  .page1 {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(2, 140px);
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .item1 {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .item1 img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .item1 span {
+    font-size: 14px;
+    color: #333;
+  }
+
+.background-container1 {
+    display: none; /* Ẩn trên di động */
+}
+.scroll-container1 {
+    display: none; /* Ẩn trên di động */
+}
+@media (max-width: 768px) {
+  .background-container1 {
+      display: block; /* Ẩn trên di động */
+  }
+  .scroll-container1 {
+      display: block; /* Ẩn trên di động */
+  }
+  .headerme {
+      display: none; /* Ẩn header lớn trên di động */
+  }
+}
 
 /* =================== Services Section =================== */
 .service-wrapper {
@@ -425,7 +874,7 @@ body {
         font-size: 13px;
     }
     .partners h2{
-        margin-top: 200px; /* Cách trên cho tablet */
+        margin-top: 40px; /* Cách trên cho tablet */
     }
 }
 
@@ -435,7 +884,7 @@ body {
     }
 
     .partners h2 {
-        margin-top: 200px;
+        margin-top: -64px;
         font-size: 20px;
     }
 
@@ -459,67 +908,75 @@ body {
 
 /* =============================Banner quảng cáo====================== */
 
+/* === Khung chứa tổng thể slider quảng cáo === */
 .ad-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    width: 100%;              /* Chiếm toàn bộ chiều ngang */
+    overflow: hidden;         /* Ẩn phần nội dung tràn ra ngoài (giúp tạo hiệu ứng trượt) */
+    position: relative;       /* Định vị tương đối, để có thể đặt các phần tử con theo vị trí */
 }
 
+/* === Khối trượt chứa tất cả các slide === */
 .ad-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* 100% × số ảnh */
+    display: flex;                    /* Sắp xếp các slide theo hàng ngang */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng mượt khi trượt slide */
+    width: 100%;                     /* Tổng chiều rộng sẽ được set bằng JS (100% × số slide) */
 }
 
-.ad-slider > div {  /* mỗi slide */
-    min-width: 100%;
+/* === Mỗi slide === */
+.ad-slider > div {
+    min-width: 100%;         /* Mỗi slide chiếm 100% chiều rộng của container */
 }
 
-
+/* === Phần hiển thị 1 slide === */
 .ad-slide {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 300px; /* Ví dụ đặt chiều cao cố định */
-    position: relative;
+    flex: 0 0 100%;          /* Không co giãn, chiếm đúng 100% chiều ngang */
+    width: 100%;             /* Đảm bảo chiếm toàn bộ chiều ngang */
+    height: 300px;           /* Chiều cao cố định của slide */
+    position: relative;      /* Dự phòng cho các thành phần con (nếu dùng positioning) */
 }
 
+/* === Ảnh bên trong mỗi slide === */
 .ad-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Quan trọng: giữ toàn bộ ảnh */
-    display: block;
+    width: 100%;             /* Ảnh rộng bằng slide */
+    height: 100%;            /* Ảnh cao bằng slide */
+    object-fit: contain;     /* Giữ nguyên tỉ lệ ảnh, không bị cắt */
+    display: block;          /* Loại bỏ khoảng trắng bên dưới ảnh (ảnh inline mặc định) */
 }
 
-
+/* === Vùng chứa các chấm điều hướng (dot) === */
 .dot-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    display: flex;               /* Xếp các chấm theo hàng ngang */
+    justify-content: center;    /* Căn giữa dãy chấm */
+    margin-top: 10px;           /* Khoảng cách phía trên */
 }
 
+/* === Mỗi chấm nhỏ điều hướng === */
 .dot {
-    width: 12px;
+    width: 12px;                /* Kích thước chấm */
     height: 12px;
-    border-radius: 50%;
-    background: gray;
-    margin: 0 5px;
-    cursor: pointer;
+    border-radius: 50%;         /* Bo tròn thành hình tròn */
+    background: gray;           /* Màu chấm khi không active */
+    margin: 0 5px;              /* Khoảng cách ngang giữa các chấm */
+    cursor: pointer;            /* Khi hover vào có hình bàn tay */
 }
 
+/* === Chấm đang được chọn (active) === */
 .dot.active {
-    background: blue;
+    background: blue;           /* Màu chấm khi đang active */
 }
 
+/* === Responsive: Điều chỉnh dot khi màn hình nhỏ hơn 600px === */
 @media (max-width: 600px) {
-  .dot{
-    width: 8px;
+  .dot {
+    width: 8px;                 /* Chấm nhỏ hơn */
     height: 8px;
   }
+
   .dot-wrapper {
-    margin-top: 5px;
+    margin-top: 5px;            /* Khoảng cách phía trên nhỏ lại */
   }
-  
 }
+
 
 
 /* =======================Banner =================================*/
@@ -530,11 +987,10 @@ body {
     height: 400px; /* Chiều cao banner */
     text-align: center; /* Căn giữa nội dung */
     padding: 40px 20px; /* Khoảng cách trong */
-    background-image: url(/AppoinmentBooking/img/BannerQuangCaoDangKy.png); /* Ảnh nền banner */
+    background-image: url(../img/home/BannerQuangCaoDangKy.png); /* Ảnh nền banner */
     background-size: cover; /* Ảnh không méo */
     background-position: center; /* Căn giữa ảnh */
     background-repeat: no-repeat; /* Không lặp lại ảnh */
-
   }
   
   .banner-content {
@@ -579,7 +1035,7 @@ body {
 @media (max-width: 480px) {
     .hero-banner {
         justify-content: flex-start;
-        background-image: url(/AppoinmentBooking/img/bannerMobileAppointment.png); /* Ảnh nền banner */
+        background-image: url(../img/home/bannerMobileAppointment.png); /* Ảnh nền banner */
     }
 
     .banner-content {
@@ -589,12 +1045,13 @@ body {
     }
 }
 
-  /* ==============================DOCTOR======================== */
-
-/* =================== Doctor Section =================== */
+/* <!-- ------------------------------------------------------------------------------------------------------------ --> */
+/* <!-- ====================================Doctor Consultation Via Video Call====================================== --> */
+/* <!-- ------------------------------------Bác sĩ tư vấn khám bệnh qua video--------------------------------------- --> */
+/* <!-- ------------------------------------------------------------------------------------------------------------ --> */
 
 .doctor-video-section {
-  padding: 40px 100px;  /* Đặt padding cho section, 40px ở trên và dưới, 100px bên trái và phải */
+  padding: 40px 160px;  /* Đặt padding cho section, 40px ở trên và dưới, 100px bên trái và phải */
   background: #fff;  /* Màu nền của section là trắng */
   text-align: center;  /* Căn giữa nội dung trong section */
 }
@@ -609,15 +1066,23 @@ body {
 .doctor-card {
   background: #f9f9f9;  /* Màu nền của thẻ bác sĩ là màu xám nhạt */
   border-radius: 12px;  /* Bo tròn các góc của thẻ bác sĩ */
-  padding: 20px 10px;  /* Đặt padding cho thẻ bác sĩ (20px trên dưới, 10px trái phải) */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  /* Thêm bóng đổ cho thẻ bác sĩ */
+  padding: 16px 8px;  /* Đặt padding cho thẻ bác sĩ (20px trên dưới, 10px trái phải) */
   text-align: center;  /* Căn giữa nội dung trong thẻ bác sĩ */
-  width: 260px;  /* Đặt chiều rộng của thẻ bác sĩ là 260px */
+  width: 220px;  /* Đặt chiều rộng của thẻ bác sĩ là 260px */
   height: 100%;  /* Đặt chiều cao thẻ bác sĩ là 100% */
+  font-size: 14px;  /* Đặt kích thước chữ trong thẻ bác sĩ là 14px */
+    overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .doctor-card h4 {
-  margin-bottom: 7px;  /* Đặt khoảng cách phía dưới của tiêu đề bác sĩ là 7px */
+  margin-bottom: 6px;  /* Đặt khoảng cách phía dưới của tiêu đề bác sĩ là 7px */
+  font-size: 15px;  /* Đặt kích thước chữ của tiêu đề bác sĩ là 15px */
+}
+
+.doctor-card p {
+  margin: 4px 0;
+  font-size: 13.5px;
 }
 
 .doctor-card p, h4 {
@@ -629,8 +1094,8 @@ body {
 }
 
 .doctor-img {
-  width: 80px;  /* Đặt chiều rộng của ảnh bác sĩ là 80px */
-  height: 80px;  /* Đặt chiều cao của ảnh bác sĩ là 80px */
+  width: 70px;  /* Đặt chiều rộng của ảnh bác sĩ là 80px */
+  height: 70px;  /* Đặt chiều cao của ảnh bác sĩ là 80px */
   border-radius: 50%;  /* Làm cho ảnh có hình tròn */
 }
 
@@ -650,7 +1115,7 @@ body {
 
 .rating i {
   color: #ffcc00;  /* Màu vàng cho icon sao trong phần đánh giá */
-  margin-right: 5px;  /* Khoảng cách giữa sao và chữ trong phần đánh giá */
+  margin-right: 2px;  /* Khoảng cách giữa sao và chữ trong phần đánh giá */
 }
 
 .btn-consult {
@@ -664,6 +1129,10 @@ body {
   font-weight: bold;  /* Đặt chữ đậm cho nút */
 }
 
+.btn-consult:hover {
+  background: #007bb5;  /* Màu nền của nút khi hover là màu xanh dương đậm hơn */
+}
+
 .swiper {
   padding: 20px 0;  /* Đặt padding cho swiper, 20px ở trên và dưới */
 }
@@ -672,103 +1141,263 @@ body {
   display: flex;  /* Sử dụng flexbox để căn chỉnh các phần tử trong slide */
   justify-content: center;  /* Căn giữa các phần tử trong slide */
 }
-    
 
-
-  /* ============== */
-  /* Section */
-  .category-filter {
-    display: flex;  /* Sử dụng flexbox để căn chỉnh các phần tử trong filter */
-    gap: 10px;  /* Khoảng cách giữa các phần tử trong filter là 10px */
-    margin-bottom: 20px;  /* Đặt khoảng cách phía dưới là 20px */
-    justify-content: center;  /* Căn giữa các phần tử trong filter */
+.doctor-slider {
+  display: flex;
+  overflow-x: auto;             /* Cho phép cuộn ngang */
+  overflow-y: hidden;           /* Không cho cuộn dọc */
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+  -ms-overflow-style: none;     /* Ẩn thanh cuộn cho IE và Edge */
+  scrollbar-width: none;        /* Ẩn thanh cuộn cho Firefox */
+  padding: auto 30px; /* Đặt padding tự động cho bên trái và phải */
 }
 
-.filter-btn {
-    padding: 10px 20px;  /* Đặt padding cho nút filter */
-    border: 1px solid #00bfff;  /* Đặt viền nút với màu xanh dương */
-    background-color: white;  /* Màu nền của nút là trắng */
-    color: #00bfff;  /* Màu chữ của nút là xanh dương */
-    border-radius: 20px;  /* Bo tròn các góc của nút */
-    cursor: pointer;  /* Thêm hiệu ứng con trỏ khi di chuột vào nút */
-    transition: all 0.3s;  /* Thêm hiệu ứng chuyển động cho các thay đổi */
+.doctor-slider::-webkit-scrollbar {
+  display: none;                /* Ẩn thanh cuộn cho Chrome, Safari */
 }
 
-.filter-btn.active,
-.filter-btn:hover {
-    background-color: #00bfff;  /* Đổi màu nền của nút khi hover hoặc active thành xanh dương */
-    color: white;  /* Đổi màu chữ của nút thành trắng khi hover hoặc active */
+.doctor-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 
-.service-list {
-    display: flex;  /* Sử dụng flexbox để căn chỉnh các phần tử trong danh sách dịch vụ */
-    flex-wrap: wrap;  /* Cho phép các phần tử trong danh sách dịch vụ bọc xuống dòng khi hết không gian */
-    justify-content: center;  /* Căn giữa các phần tử trong danh sách dịch vụ */
-    gap: 20px;  /* Khoảng cách giữa các phần tử trong danh sách là 20px */
+.doctor-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card {
-    width: 250px;  /* Đặt chiều rộng của mỗi thẻ dịch vụ là 250px */
-    background: #fff;  /* Màu nền của thẻ dịch vụ là trắng */
-    padding: 15px;  /* Đặt padding cho thẻ dịch vụ */
-    border-radius: 12px;  /* Bo tròn các góc của thẻ dịch vụ */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Thêm bóng đổ cho thẻ dịch vụ */
-    text-align: center;  /* Căn giữa nội dung trong thẻ dịch vụ */
-    transition: 0.3s;  /* Thêm hiệu ứng chuyển động cho các thay đổi */
-    display: flex;  /* Sử dụng flexbox để căn chỉnh các phần tử con trong thẻ dịch vụ */
-    flex-direction: column;  /* Sắp xếp các phần tử con trong thẻ theo chiều dọc */
-    justify-content: space-between;  /* Đảm bảo các phần tử con trong thẻ dịch vụ cách đều nhau */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .doctor-slide {
+  margin-left: -40px; /* Các thẻ sẽ đè lên nhau */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+  }
+
+  .doctor-slide:first-child {
+    margin-left: 0; /* giữ thẻ đầu không bị lệch */
+  }
+  .doctor-video-section {
+    padding: 20px; /* Giảm padding cho tablet */
+  }
+  .doctor-slider{
+  display: flex;
+  gap: 0; /* Không cần khoảng cách nữa nếu muốn xếp đè lên */
+  overflow-x: auto;
+  padding-bottom: 40px;
+  scroll-behavior: smooth;
+  position: relative;
+  }
+  .doctor-slide:hover{
+  transform: translateY(-10px) scale(1.03);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
 }
 
-.service-card img {
-    width: 100%;  /* Đặt chiều rộng của ảnh là 100% */
-    height: 150px;  /* Đặt chiều cao của ảnh là 150px */
-    object-fit: cover;  /* Cắt ảnh sao cho không bị biến dạng và đủ lấp đầy không gian */
-    border-radius: 8px;  /* Bo tròn các góc của ảnh */
-}
+@media (max-width: 767px) {
+    .doctor-video-section {
+        padding: 10px; /* Giảm padding*/
+    }
 
-.service-card h3 {
-    min-height: 48px;  /* Đặt chiều cao tối thiểu của tiêu đề là 48px để giữ chỗ cho tiêu đề dài/2 dòng */
-    margin: 10px 0 5px;  /* Đặt khoảng cách phía trên và dưới tiêu đề */
-    font-size: 16px;  /* Đặt kích thước chữ của tiêu đề là 16px */
-}
+    .doctor-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 14px 6px;      /* Giảm padding */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 180px;           /* Giảm từ 260px xuống 220px */
+    height: 100%;
+    font-size: 12px;        /* Nhỏ chữ hơn một chút */
+    }
 
-.service-card p {
-    margin: 3px 0;  /* Đặt khoảng cách trên và dưới cho đoạn văn trong thẻ dịch vụ */
-}
+    .doctor-card h4 {
+      margin-bottom: 6px;
+      font-size: 13px;        /* Nhỏ hơn để cân đối card */
+    }
 
-.service-card .price {
-    color: orange;  /* Đặt màu chữ của giá là màu cam */
-    font-weight: bold;  /* Đặt chữ đậm cho giá */
-}
-
-.service-card .old-price {
-    text-decoration: line-through;  /* Gạch ngang giá cũ */
-    color: #aaa;  /* Đặt màu chữ của giá cũ là màu xám */
-    margin-left: 10px;  /* Đặt khoảng cách bên trái cho giá cũ */
-}
-
-.book-btn {
-    background-color: #00bfff;  /* Đặt màu nền của nút book là xanh dương */
-    color: white;  /* Đặt màu chữ của nút book là trắng */
-    padding: 10px;  /* Đặt padding cho nút book */
-    width: 100%;  /* Đặt chiều rộng của nút book là 100% */
-    border: none;  /* Bỏ viền cho nút */
-    border-radius: 8px;  /* Bo tròn các góc của nút */
-    margin-top: 10px;  /* Đặt khoảng cách phía trên nút book */
-    cursor: pointer;  /* Thêm hiệu ứng con trỏ khi di chuột vào nút */
-    transition: 0.3s;  /* Thêm hiệu ứng chuyển động cho các thay đổi */
-}
-
-.book-btn:hover {
-    background-color: #0099cc;  /* Khi hover vào nút book, đổi màu nền thành xanh đậm hơn */
+    .doctor-card p {
+      margin: 4px 0;
+      font-size: 13.5px;
+    }
+    .rating {
+        font-size: 10px; /* Nhỏ hơn một chút */
+        padding: 6px 8px; /* Giảm padding */
+    }
 }
 
 
+    /* <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ====================================Comprehensive Healthcare========================================= -->
+    <!-- ----------------------------------Chăm sóc sức khoẻ toàn diện---------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------------- --> */
+
+  .healthcare-section1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categories1 {
+  margin: 20px 0;
+}
+
+.categories1 button {
+  padding: 10px 20px;
+  border: 2px solid #00bfff;
+  background: white;
+  color: #00bfff;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.categories1 button.active,
+.categories1 button:hover {
+  background: #00bfff;
+  color: white;
+}
+
+.card-container1 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Ẩn thanh cuộn ngang */
+.card-container1::-webkit-scrollbar {
+  display: none;
+}
+.card-container1 {
+  -ms-overflow-style: none;  /* IE và Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+.card1 {
+  flex: 0 0 280px; /* Chiều rộng cố định cho mỗi card */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box; /* Chiều cao tự mở rộng theo container */
+}
+
+.card-content1 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between; /* Đẩy nút xuống cuối */
+}
+
+.card1 h3,
+.card1 .price,
+.card1 del {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.card1 img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card1 h3 {
+  font-size: 16px;
+  height: 72px; /* 2 dòng */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clinic1 {
+  color: #666;
+  font-size: 14px;
+}
+
+.price1 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.price1 .new1 {
+  color: #f60;
+  font-weight: bold;
+}
+
+.price1 .old1 {
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.book-btn1:hover {
+  background-color: #0099cc!important;
+}
+
+.card1 .book-btn1 {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+
+.card-container1 {
+  display: flex;
+  gap: 0; /* Không cần khoảng cách nữa nếu muốn xếp đè lên */
+  overflow-x: auto;
+  padding-bottom: 40px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.card1 {
+  margin-left: -60px; /* Các thẻ sẽ đè lên nhau */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card1:first-child {
+  margin-left: 0;
+}
+
+.card1:hover {
+  transform: translateY(-10px) scale(1.03);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
   
-
-  /*  */
-
+}
+/* <!-- ---------------------------------------------------------------------------------------- -->
+  <!-- ======================================Specialty========================================= -->
+  <!-- ------------------------------------Chuyên Khoa----------------------------------------- -->
+  <!-- ---------------------------------------------------------------------------------------- --> */
 
   .specialty-section {
     text-align: center;  /* Căn giữa nội dung trong section */
@@ -829,24 +1458,22 @@ body {
     gap: 5px;  /* Khoảng cách giữa các phần tử con trong liên kết */
 }
 
-.view-all a::after {
-    content: "▼";  /* Thêm biểu tượng mũi tên xuống sau liên kết */
-    font-size: 12px;  /* Đặt kích thước chữ của biểu tượng mũi tên là 12px */
-}
-
 .specialty-grid .hidden {
     display: none;  /* Ẩn các phần tử có lớp "hidden" */
 }
   
 @media (max-width: 1024px) {
     .specialty-grid {
-        grid-template-columns: repeat(4, 1fr);  /* Khi màn hình nhỏ hơn hoặc bằng 1024px, thay đổi số cột trong grid thành 4 */
+        grid-template-columns: repeat(6, 1fr);  /* Khi màn hình nhỏ hơn hoặc bằng 1024px, thay đổi số cột trong grid thành 4 */
     }
 }
   
-@media (max-width: 600px) {
+@media (max-width: 678px) {
     .specialty-grid {
-        grid-template-columns: repeat(2, 1fr);  /* Khi màn hình nhỏ hơn hoặc bằng 600px, thay đổi số cột trong grid thành 2 */
+        grid-template-columns: repeat(3, 1fr);  /* Khi màn hình nhỏ hơn hoặc bằng 600px, thay đổi số cột trong grid thành 2 */
+    }
+    .specialty-section {
+        padding: 30px 10px;  /* Giảm padding cho section */
     }
 }
 
@@ -873,7 +1500,10 @@ body {
     margin-top: 30px;  /* Đặt khoảng cách phía trên là 30px */
 }
 
-  /* ================================================== */
+  /*      <!-- ---------------------------------------------------------------------------------------- -->
+          <!-- ======================================Statistics========================================= -->
+          <!-- ---------------------------------------Thống kê----------------------------------------- -->
+          <!-- ---------------------------------------------------------------------------------------- --> */
 
   .statistics-section {
     text-align: center;
@@ -893,7 +1523,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #f9f9f9;
-    padding: 30px 20px 80px 20px;
+    padding: 30px 20px 60px 20px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     gap: 30px;
@@ -905,13 +1535,13 @@ body {
   
   
   .stat-item {
-    width: 120px;
+    width: 130px;
     text-align: center;
   }
   
   .stat-item img {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
   }
   
@@ -923,17 +1553,45 @@ body {
   }
   
   .stat-item p {
-    font-size: 14px;
+    font-size: 20px;
     color: #555;
   }
+
+  @media (max-width: 1024px) {
+  .statistics-box {
+    justify-content: center;
+  }
+
+  .stat-item {
+    width: calc(33.333% - 20px); /* 3 item mỗi hàng, trừ khoảng cách */
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .statistics-box{
+    padding: 30px 20px 30px 20px;
+  }
+  .stat-item p {
+    font-size: 16px;
+  }
+}
   
 
-  /* ====================================== */
+/*      <!-- ---------------------------------------------------------------------------------------- -->
+          <!-- ======================================Customer Reviews========================================= -->
+          <!-- ---------------------------------------Phản hồi khách hàng----------------------------------------- -->
+          <!-- ---------------------------------------------------------------------------------------- --> */
 
 
   .review-section {
     padding: 40px 130px;
     text-align: center;
+    background-color: #ffffff
   }
   
   .section-title {
@@ -965,7 +1623,7 @@ body {
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: 300px;
-    background-color: #f8f9fc;
+    background-color: #F0F3F8;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -1002,6 +1660,27 @@ body {
     line-height: 1.6;
   }
   
+@media (min-width: 768) and (max-width: 1024px) {
+
+  .review-card{
+     margin-left: -60px; /* chồng lên card trước */
+  }
+
+  .review-card:first-child {
+    margin-left: 0; /* giữ thẻ đầu không bị lệch */
+  }
+  
+  .review-card:hover {
+    transform: scale(1.03);
+    z-index: 10;
+  }
+}
+  @media (max-width: 768px) {
+  .review-section {
+    padding: 40px 30px;
+    text-align: center;
+  }
+}
   
 
   /* ============================================== */
@@ -1072,18 +1751,6 @@ body {
   position: relative;
 }
 
-.footer-title::after {
-  content: "▶";
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: transform 0.3s;
-}
-
-.footer-title.active::after {
-  transform: rotate(90deg);
-}
-
 .footer-column ul {
   list-style: none;
   padding: 0;
@@ -1128,17 +1795,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer-title::after {
-    content: "▶";
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: transform 0.3s;
-  }
+.footer-title::after {
+  content: "\25B6"; 
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.3s;
+}
 
-  .footer-title.active::after {
-    transform: rotate(90deg);
-  }
+.footer-title.active::after {
+  transform: rotate(90deg); /* Xoay sang hướng xuống */
+}
+
 }
 
 
@@ -1152,18 +1820,19 @@ body {
   }
 
 /*  */
-
-    .mobile-nav {
+.mobile-nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: white;
+  height: 60px;
+  background-color: white;
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #ddd;
+  align-items: center;
+  border-top: 2px solid #00bfff;
   z-index: 999;
-  padding: 5px 0;
 }
+
 
 .nav-item {
   display: flex;
@@ -1183,9 +1852,19 @@ body {
   color: #00bfff;
 }
 
-/* Chỉ hiển thị thanh điều hướng ở thiết bị nhỏ hơn 768px */
+/* Chỉ hiển thị mobile-nav trên thiết bị nhỏ */
 @media (min-width: 920px) {
   .mobile-nav {
-    display: none;
+    display: none !important;
   }
 }
+
+/* Tránh bị che footer bởi thanh điều hướng mobile */
+@media (max-width: 920px) {
+  footer {
+    padding-bottom: 60px;
+  }
+}
+
+
+

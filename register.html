@@ -10,26 +10,27 @@
   <div class="container">
     <div class="left-panel">
       <div class="icon-box">
-        <img src="img/Logo.png" alt="Icon" />
+        <img src="img/Home/Logo.png" alt="Icon" />
       </div>
       <h3>Register Now</h3>
       <p>Just answer a few simple questions so we can personalize the experience for you.</p>
-      <img src="img/picregister.png" alt="Illustration" class="illustration"/>
+      <img src="img/Login/picregister.png" alt="Illustration" class="illustration"/>
     </div>
     <div class="right-panel">
       <h2>Register</h2>
-      <form>
-        <input type="text" placeholder="Fullname*" required />
+      <form id="register-form">
+        <input type="text" id="fullname" placeholder="Fullname*" required />
         <div class="phone-group">
           <span class="flag">
             <img src="https://flagcdn.com/w40/vn.png" alt="VN Flag" class="flag-icon">
             +84
           </span>
-          <input type="tel" placeholder="Phone*" required />
+          <input type="tel" id="phone" placeholder="Phone*" required />
         </div>
 
-        <input type="password" placeholder="Password*" required />
-        <input type="password" placeholder="Re-enter password*" required />
+        <input type="password" id="password" placeholder="Password*" required />
+        <input type="password" id="repassword" placeholder="Re-enter password*" required />
+        <p id="register-message"></p>
         
         <p class="or">Or sign up with ...</p>
         <div class="social-buttons">
@@ -37,11 +38,15 @@
           <button type="button" class="google">Google</button>
         </div>
         <p class="privacy">
-          By filling in the form, you agree to our <a href="#">Privacy Policy</a> including our cookie use.
+          Already have an account? <a href="login.html">LOGIN </a> now!.
         </p>
         <button type="submit" class="submit-btn">Submit</button>
+        
       </form>
     </div>
   </div>
+
+  <script src="js/register/register.js"></script>
+
 </body>
 </html>

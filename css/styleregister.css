@@ -16,18 +16,18 @@
     background-repeat: no-repeat; /* Không lặp lại ảnh */
   }
   
-  .container {
-    margin-top: 20px;
-    display: flex;
-    width: 850px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    background: #fff;
-    
-  }
+.container {
+  margin-top: 20px;
+  display: flex;
+  width: 850px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  background: #fff;
   
-  .left-panel {
+}
+  
+.left-panel {
     width: 40%;
     background: #57B5D4;
     color: #fff;
@@ -38,18 +38,18 @@
     justify-content: center;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-  }
+}
 
-  .left-panel {
+.left-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* Căn giữa theo chiều ngang */
-  justify-content: center;  /* Căn giữa theo chiều dọc */
+  align-items: center;      
+  justify-content: center; 
   text-align: center;
 }
 
 .icon-box img {
-  width: 100px;  /* bạn có thể tăng giảm */
+  width: 100px;  
   height: auto;
   margin-bottom: 20px;
 }

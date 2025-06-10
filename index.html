@@ -3,205 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TCP Navbar</title>
+  <title>TCP Website</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- https://fontawesome.com/search?q=search&o=r -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-       
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <!-- navbar top -->
-      <div class="navbar-top">
-        <!-- Logo -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- ================================================Header============================================ -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <header class="header1">
+      <div class="top-bar">
         <div class="logo">
-          <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
-          <span style="color: #00bfff; font-weight: bold;">TCP</span>
+          <a href="index.html"><img src="img/home/Logo.png" alt="Logo"></a>
+          <span>TCP</span>
         </div>
-        <!-- Social links -->
-        <div class="social-links">
-          <span><i class="fa-brands fa-facebook"></i> Facebook</span>
-          <span>|</span>
-          <span>Zalo 0363607229</span>
-          <span>|</span>
-          <span><i class="fa-brands fa-tiktok"></i> TikTok</span>
+        <div class="social">
+          <a href="https://www.facebook.com/?locale=vi_VN"><i class="fab fa-facebook"></i> Facebook</a>
+          <span class="divider"></span>
+          <a href="https://zalo.me/pc">Zalo 0999888777</a>
+          <span class="divider"></span>
+          <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
-        <!-- Buttons -->
-        <div class="buttons">
-          <button class="login-btn"><a href="login.html">Login</a></button>
-          <button class="register-btn"><a href="register.html">Register</a></button>
+        <div class="auth-buttons auth-area">
+          <button class="login"><a href="login.html">Login</a></button>
+          <button class="register"><a href="register.html">Register</a></button>
         </div>
-        <!-- hamburger icon -->
-        <div class="hamburger" id="hamburger">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <div class="account-btn">
+          <button class="btn-account auth-area"><a href="login.html" class="auth-area">Account</a></button>
+          <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>  
       </div>
-
-      <!-- hr -->
-      <hr style="margin: 10px 150px;">
-
-      <!-- navbar-bottom -->
-      <!-- Menu -->
-      <div class="navbar-menu" id="navbarMenu">
-        <div class="menu-item">
-          <a href="#">medical facility ▾</a><!--cơ sở y tế-->
-          <div class="dropdown">
-            <a href="PublicHopital.html">Public hospital</a><!--bệnh viện công-->
-            <a href="#">private hospital</a><!--bệnh viện tư-->
-          </div>
-        </div>
-        <div class="menu-item">
-          <a href="#">medical services ▾</a><!--dịch vụ y tế-->
-          <div class="dropdown">
-            <a href="#">Book at the facility</a><!--đặt khám tại cơ sở-->
-            <a href="#">After-hours booking</a><!--đặt khám ngoài giờ-->
-          </div>  
-        </div>
-        <div class="menu-item">
-          <a href="CorporateHeadthCheck.html">corporate health check-up</a><!--khám sức khỏe doanh nghiệp-->
-        </div>
-        <div class="menu-item">
-          <a href="#">Health news ▾</a><!--tin tức sức khỏe-->
-          <div class="dropdown">
-            <a href="#">Service News</a><!--tin tức dịch vụ-->
-            <a href="#">Medical News</a><!--tin tức y tế-->
-          </div>
-        </div>
-        <div class="menu-item">
-          <a href="#">Instructions ▾</a><!--hướng dẫn-->
-          <div class="dropdown">
-            <a href="intruction.html">Book an Appointment</a><!--đặt lịch khám-->
-            <a href="#">Medical Visit Procedure</a><!--thủ tục khám bệnh-->
-          </div>
-        </div>
+      <script src="js/index/lg.js"></script>
+      <hr style="margin: auto 190px;">
+      <nav class="nav-bar">
+        <nav class="desktop-navbar">
+          <ul class="nav-menu">
+            <li class="dropdown">
+              <a href="#">Medical Facility</a>
+              <ul class="dropdown-menu">
+                <li><a href="publichopital.html">Public hospital</a></li>
+                <li><a href="#">private hospital</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Medical Services </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Book at the facility</a></li>
+                <li><a href="#">After-hours booking</a></li>
+              </ul>
+            </li>
+            <li><a href="corporatehealthcheck.html">Corporate Health Check-up</a></li>
+            <li class="dropdown">
+              <a href="#">Health News </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Service News</a></li>
+                <li><a href="#">Medical News</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Instructions </a>
+              <ul class="dropdown-menu">
+                <li><a href="intruction.html">Book an Appointment</a></li>
+                <li><a href="#">Medical Visit Procedure</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Sidebar mobile -->
+    <div class="mobile-sidebar">
+      <div class="sidebar-content">
+        <span class="close-btn">&times;</span>
+        <ul class="sidebar-menu">
+          <li class="dropdown">
+            <div class="dropdown-toggle">Medical Facility <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="publichopital.html">Public hospital</a></li>
+              <li><a href="#">private hospital</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Medical Services <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="#">Book at the facility</a></li>
+              <li><a href="#">After-hours booking</a></li>
+            </ul>
+          </li>            
+          <li><a href="corporatehealthcheck.html">Corporate Health Check-up</a></li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Health News <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="#">Service News</a></li>
+              <li><a href="#">Medical News</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="dropdown-toggle">Instructions <i class="fa-solid fa-caret-down icon-rotate"></i></div>
+            <ul class="dropdown-menu">
+              <li><a href="intruction.html">Book an Appointment</a></li>
+              <li><a href="#">Medical Visit Procedure</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <!-- script hamburger icon -->
-<!-- <script>
-  const hamburger = document.getElementById('hamburger');
-  const navbarMenu = document.getElementById('navbarMenu');
-  const overlay = document.getElementById('overlay');
-
-  function openMenu() {
-    navbarMenu.classList.add('active');
-    overlay.classList.add('active');
-  }
-
-  function closeMenu() {
-    navbarMenu.classList.remove('active');
-    overlay.classList.remove('active');
-  }
-
-  hamburger.addEventListener('click', openMenu);
-  overlay.addEventListener('click', closeMenu);
-</script> -->
-
-      <script>
-    const hamburger = document.getElementById("hamburger");
-    const navbarMenu = document.getElementById("navbarMenu");
-
-    hamburger.addEventListener("click", () => {
-        navbarMenu.classList.toggle("active");
-    });
-</script>
-
+    <script src="js/index/muiten.js"></script>
+    <script  src="js/index/header1.js"></script>
 
     <!-- Notification bar -->
     <div class="notification-bar">
       <marquee behavior="scroll" direction="left" scrollamount="5">
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢 Book a Care Assistant today — so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <!--Đặt lịch Trợ lý chăm sóc ngay hôm nay — để người thân của bạn được hỗ trợ trong mọi bước khám bệnh!-->
-      </marquee>
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-bullhorn"></i> Book a Care Assistant today - so your loved ones are supported every step of their medical visit! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </marquee>	
     </div>
-  
-    <!--Header-->    
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- ==================Connecting People with Leading Healthcare Facilities and Services========================= -->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->   
     <div class="headerme">
       <div class="header">
-        <!--Kết nối quý khách với các cơ sở và dịch vụ chăm sóc sức khỏe hàng đầu-->
         <h1>Connecting People with Leading Healthcare Facilities and Services</h1>     
-         <!--  -->
+        <!--  -->
         <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text"  placeholder="Search for Doctors">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text"  placeholder="Search for Doctors">
         </div>     
         <!--  -->
         <div class="info-text">
-            <p>Book Appointments Fast – Get Your Queue Number Online – Consult Doctors Remotely</p><!--dịch vụ đặt lịch khám nhanh chóng - nhận số thứ tự online - tư vấn bác sĩ từ xa-->
-            <p>Schedule by Time – Book early to get a better spot in line!</p><!--đặt lịch theo thời gian - đặt sớm để có vị trí tốt hơn trong hàng!-->
-            <p>Get a Refund When You Cancel – Enjoy Exclusive Cashback Opportunities!</p><!--hoàn tiền khi hủy - tận hưởng cơ hội hoàn tiền độc quyền!-->
+          <p>Book Appointments Fast – Get Your Queue Number Online – Consult Doctors Remotely</p>
+          <p>Schedule by Time – Book early to get a better spot in line!</p>
+          <p>Get a Refund When You Cancel – Enjoy Exclusive Cashback Opportunities!</p>
         </div>
         <!--  -->
         <div class="service-wrapper">            
           <div class="service-cards" id="serviceCards">
             <div class="card">
-              <img src="img/BookanOn-siteAppointment.webp" alt="Book an On-site Appointment">
+              <img src="img/home/BookanOn-siteAppointment.webp" alt="Book an On-site Appointment">
               <p>Book an On-site Appointment</p>
             </div>
             <div class="card">
-              <img src="img/HealthCheck-upPackage.webp" alt="Health Check-up Package">
+              <img src="img/home/HealthCheck-upPackage.webp" alt="Health Check-up Package">
               <p>Health Check-up Package</p>
             </div>
             <div class="card">
-              <img src="img/AfterHoursAppointment.webp" alt="After Hours Appointment">
+              <img src="img/home/AfterHoursAppointment.webp" alt="After Hours Appointment">
               <p>After Hours Appointment</p>
             </div>
             <div class="card">
-              <img src="img/ScheduleATest.webp" alt="Schedule a Test">
+              <img src="img/home/ScheduleATest.webp" alt="Schedule a Test">
               <p>Schedule a Test</p>
             </div>
             <div class="card">
-              <img src="img/BookWithaDoctor.webp" alt="Book with a Doctor">
+              <img src="img/home/BookWithaDoctor.webp" alt="Book with a Doctor">
               <p>Book with a Doctor</p>
             </div>
             <div class="card">
-              <img src="img/BookaVaccination.webp" alt="Book a Vaccination">
+              <img src="img/home/BookaVaccination.webp" alt="Book a Vaccination">
               <p>Book a Vaccination</p>
             </div>
             <div class="card">
-              <img src="img/CallaDoctorviaVideo.webp" alt="Call a Doctor via Video">
+              <img src="img/home/CallaDoctorviaVideo.webp" alt="Call a Doctor via Video">
               <p>Call a Doctor via Video</p>
             </div>
             <div class="card">
-              <img src="img/BookanOn-siteAppointment.webp" alt="Book an On-site Appointment">
+              <img src="img/home/BookanOn-siteAppointment.webp" alt="Book an On-site Appointment">
               <p>Book an On-site Appointment</p>
             </div>
             <div class="card">
-              <img src="img/HealthCheck-upPackage.webp" alt="Health Check-up Package">
+              <img src="img/home/HealthCheck-upPackage.webp" alt="Health Check-up Package">
               <p>Health Check-up Package</p>
             </div>
             <div class="card">
-              <img src="img/AfterHoursAppointment.webp" alt="After Hours Appointment">
+              <img src="img/home/AfterHoursAppointment.webp" alt="After Hours Appointment">
               <p>After Hours Appointment</p>
             </div>
             <div class="card">
-              <img src="img/ScheduleATest.webp" alt="Schedule a Test">
+              <img src="img/home/ScheduleATest.webp" alt="Schedule a Test">
               <p>Schedule a Test</p>
             </div>
             <div class="card">
-              <img src="img/BookWithaDoctor.webp" alt="Book with a Doctor">
+              <img src="img/home/BookWithaDoctor.webp" alt="Book with a Doctor">
               <p>Book with a Doctor</p>
             </div>
             <div class="card">
-              <img src="img/BookaVaccination.webp" alt="Book a Vaccination">
+              <img src="img/home/BookaVaccination.webp" alt="Book a Vaccination">
               <p>Book a Vaccination</p>
             </div>
             <div class="card">
-              <img src="img/CallaDoctorviaVideo.webp" alt="Call a Doctor via Video">
+              <img src="img/home/CallaDoctorviaVideo.webp" alt="Call a Doctor via Video">
               <p>Call a Doctor via Video</p>
             </div>
           </div>               
@@ -209,617 +216,600 @@
       </div>          
     </div>
 
-    <!--  -->
+
+    <!-- ======================== -->
+    <div class="background-container1">
+      <div class="background-image1"></div>
+      <div class="overlay1">
+        <div class="header-text1">
+          Connecting People with Leading Healthcare Facilities and Services
+        </div>
+        <div class="search-box1">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for Doctors" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-container1">
+      <div class="pages1">
+        <div class="page1">
+          <div class="item1">
+            <img src="img/home/BookanOn-siteAppointment.webp" alt="On-site">
+            <span>Book an On-site Appointment</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/HealthCheck-upPackage.webp" alt="Checkup">
+            <span>Health Check-up Package</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/AfterHoursAppointment.webp" alt="Hours">
+            <span>After Hours Appointment</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/ScheduleATest.webp" alt="Test">
+            <span>Schedule a Test</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/BookWithaDoctor.webp" alt="Book Doctor">
+            <span>Book with a Doctor</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/BookaVaccination.webp" alt="Vaccination">
+            <span>Book a Vaccination</span>
+          </div>
+        </div>
+
+        <div class="page1">
+          <div class="item1">
+            <img src="img/home/BookanOn-siteAppointment.webp" alt="On-site">
+            <span>Book an On-site Appointment</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/HealthCheck-upPackage.webp" alt="Checkup">
+            <span>Health Check-up Package</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/AfterHoursAppointment.webp" alt="Hours">
+            <span>After Hours Appointment</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/ScheduleATest.webp" alt="Test">
+            <span>Schedule a Test</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/BookWithaDoctor.webp" alt="Book Doctor">
+            <span>Book with a Doctor</span>
+          </div>
+          <div class="item1">
+            <img src="img/home/BookaVaccination.webp" alt="Vaccination">
+            <span>Book a Vaccination</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!-- ==================Trusted Partners and Companions in Collaboration========================================== -->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
     <section class="partners">
-        <h2>Trusted Partners and Companions in Collaboration</h2>
-        <div class="partners-logos">
-            <div class="partner-item">
-                <img src="img/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png" alt="Doctor Check">
-                <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/Children'sHospitalNo1.png" alt="Đại học Y Dược TPHCM">
-                <p>Children's Hospital No. 1</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/ChoRayHospital.png" alt="Bệnh viện Nhi Đồng 1">
-                <p>Cho Ray Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/BinhThanhDistrictHospital.png" alt="Bệnh viện Chợ Rẫy">
-                <p>Binh Thanh District Hospital</p>
-            </div>
-
-            <div class="partner-item">
-                <img src="img/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png" alt="Doctor Check">
-                <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/Children'sHospitalNo1.png" alt="Đại học Y Dược TPHCM">
-                <p>Children's Hospital No. 1</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/ChoRayHospital.png" alt="Bệnh viện Nhi Đồng 1">
-                <p>Cho Ray Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/BinhThanhDistrictHospital.png" alt="Bệnh viện Chợ Rẫy">
-                <p>Binh Thanh District Hospital</p>
-            </div>
-
-            <div class="partner-item">
-                <img src="img/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png" alt="Doctor Check">
-                <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/Children'sHospitalNo1.png" alt="Đại học Y Dược TPHCM">
-                <p>Children's Hospital No. 1</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/ChoRayHospital.png" alt="Bệnh viện Nhi Đồng 1">
-                <p>Cho Ray Hospital</p>
-            </div>
-            <div class="partner-item">
-                <img src="img/BinhThanhDistrictHospital.png" alt="Bệnh viện Chợ Rẫy">
-                <p>Binh Thanh District Hospital</p>
-            </div>
+      <h2>Trusted Partners and Companions in Collaboration</h2>
+      <div class="partners-logos">
+        <div class="partner-item">
+          <img src="img/home/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png" alt="Doctor Check">
+          <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
         </div>
-    </section>
-    
-    <!--  -->
+        <div class="partner-item">
+          <img src="img/home/Children'sHospitalNo1.png" alt="Đại học Y Dược TPHCM">
+          <p>Children's Hospital No. 1</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/ChoRayHospital.png">
+          <p>Cho Ray Hospital</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/BinhThanhDistrictHospital.png">
+          <p>Binh Thanh District Hospital</p>
+        </div>
 
-    <script>
-      
-    </script>
-    <!--  -->
-      
+        <div class="partner-item">
+          <img src="img/home/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png">
+          <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/Children'sHospitalNo1.png">
+          <p>Children's Hospital No. 1</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/ChoRayHospital.png">
+          <p>Cho Ray Hospital</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/BinhThanhDistrictHospital.png">
+          <p>Binh Thanh District Hospital</p>
+        </div>
+
+        <div class="partner-item">
+          <img src="img/home/HoChiMinhCityUniversityOfMedicineandPharmacyHospital.png">
+          <p>Ho Chi Minh City University of Medicine and Pharmacy Hospital</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/Children'sHospitalNo1.png">
+          <p>Children's Hospital No. 1</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/ChoRayHospital.png">
+          <p>Cho Ray Hospital</p>
+        </div>
+        <div class="partner-item">
+          <img src="img/home/BinhThanhDistrictHospital.png">
+          <p>Binh Thanh District Hospital</p>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- ====================================================Banner add========================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
     <div class="ad-container">
-        <div class="ad-slider">
-            <div class="ad-slide">
-                <img src="img/BannerQuangCao.png" alt="Ảnh 1">
-            </div>
-            <div class="ad-slide">
-                <img src="img/BannerQuangCao2.png" alt="Ảnh 2">
-            </div>
-            <div class="ad-slide">
-                <img src="img/BannerQuangCao3.png" alt="Ảnh 3">
-            </div>
-            <div class="ad-slide">
-                <img src="img/BannerQuangCao.png" alt="Ảnh 1">
-            </div>
+      <div class="ad-slider">
+        <div class="ad-slide">
+          <img src="img/main/BannerChay.jpg" alt="pic1">
         </div>
+        <div class="ad-slide">
+          <img src="img/main/BannerChay2.jpg" alt="pic2">
+        </div>
+        <div class="ad-slide">
+          <img src="img/main/BannerChay3.jpg" alt="pic3">
+        </div>
+        <div class="ad-slide">
+          <img src="img/main/BannerChay.jpg" alt="pic4">
+        </div>
+      </div>
     </div>
-    
     <div class="dot-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
-    
-    <script>
-        const slider = document.querySelector('.ad-slider');
-        const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
-        const totalRealSlides = dots.length;
-
-        function showSlide(index) {
-            slider.style.transition = 'transform 0.5s ease-in-out';
-            slider.style.transform = `translateX(-${index * 100}%)`;
-            updateDots(index);
-        }
-
-        function updateDots(index) {
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[index % totalRealSlides].classList.add('active');
-        }
-
-        function nextSlide() {
-            currentIndex++;
-            showSlide(currentIndex);
-
-            if (currentIndex === totalRealSlides) {
-                // Đến ảnh clone → sau 0.5s quay lại ảnh 1 thật
-                setTimeout(() => {
-                    slider.style.transition = 'none';
-                    slider.style.transform = 'translateX(0%)';
-                    currentIndex = 0;
-                }, 500);
-            }
-        }
-
-        // Xử lý khi người dùng click vào dot
-        dots.forEach((dot, idx) => {
-            dot.addEventListener('click', () => {
-                currentIndex = idx;
-                showSlide(currentIndex);
-            });
-        });
-
-        setInterval(nextSlide, 3000);
-    </script>
-    
-
+    <script src="js/index/ad-containter.js"></script>    
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- ====================================================With================================================ -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
     <section class="hero-banner">
-        <div class="banner-content">
-            <h2>With You Every Step of the Way in Your Health Journey</h2><!--Đồng hành cùng bạn trong hành trình chăm sóc sức khỏe-->
-            <p>TCP is the bridge that helps customers quickly and conveniently access high-quality healthcare services in Vietnam and Asia.</p>
-            <!--TCP là cầu nối giúp khách hàng nhanh chóng, thuận tiện tiếp cận dịch vụ chăm sóc sức khỏe chất lượng cao tại Việt Nam và Châu Á.-->
-            <a href="appointment.html" class="btn-register">Book an Appointment Now</a><!--Đặt lịch khám ngay-->
-        </div>
+      <div class="banner-content">
+        <h2>With You Every Step of the Way in Your Health Journey</h2>
+        <p>TCP is the bridge that helps customers quickly and conveniently access high-quality healthcare services in Vietnam and Asia.</p>
+        <a href="appointment.html" class="btn-register" id="booking-link">Book an Appointment Now</a>
+      </div>
+      <script src="js/loginregister.js"></script>
     </section>
-    
     <!-- ------------------------------------------------------------------------------------------------------------ -->
     <!-- ====================================Doctor Consultation Via Video Call====================================== -->
     <!-- ------------------------------------Bác sĩ tư vấn khám bệnh qua video--------------------------------------- -->
     <!-- ------------------------------------------------------------------------------------------------------------ -->
-
-
     <section class="doctor-video-section">
-        <h2 class="section-title">Doctor Consultation via Video Call</h2>
-      
-        <div class="swiper doctor-slider">
-          <div class="swiper-wrapper">
-            <!-- Card 1 -->
-            <div class="swiper-slide">
-              <div class="doctor-card">
-                <img src="img/Doctor1.png" class="doctor-img" />
-                <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                <a href="#" class="btn-consult">Get Advice Now</a>
-              </div>
-            </div>
-    
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                    <img src="img/Doctor2.png" class="doctor-img" />
-                    <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                    <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                    <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                    <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                    <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                    <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                    <img src="img/Doctor3.png" class="doctor-img" />
-                    <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                    <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                    <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                    <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                    <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                    <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                    <img src="img/Doctor4.webp" class="doctor-img" />
-                    <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                    <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                    <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                    <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                    <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                    <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                  <img src="img/Doctor2.png" class="doctor-img" />
-                  <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                  <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                  <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                  <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                  <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                  <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-  
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                <img src="img/Doctor3.png" class="doctor-img" />
-                <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-  
-            <div class="swiper-slide">
-                <div class="doctor-card">
-                    <img src="img/Doctor4.webp" class="doctor-img" />
-                    <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
-                    <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
-                    <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
-                    <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
-                    <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
-                    <a href="#" class="btn-consult">Get Advice Now</a>
-                </div>
-            </div>
-
+      <h2 class="section-title">Doctor Consultation via Video Call</h2>
+      <div class="doctor-slider">
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor1.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
           </div>
         </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor2.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Tran Thi Oanh - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor3.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Cao Hoang Sang - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor1.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor2.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Tran Thi Oanh - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor3.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Cao Hoang Sang - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+        <div class="doctor-slide">
+          <div class="doctor-card">
+            <img src="img/home/Doctor1.png" class="doctor-img" />
+            <div class="rating">Review: 4.3 <i class="fa-solid fa-star"></i> | Appointment: 38 <i class="fa-solid fa-user"></i></div>
+            <h4>MSc. Dr. Ngo Thanh Van - Hung Vuong Hospital</h4>
+            <p><i class="fa-solid fa-stethoscope"></i> Obstetrics</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 150.000đ</p>
+            <p><i class="fa-solid fa-hospital"></i> Specialist Doctor</p>
+            <a href="#" class="btn-consult">Get Advice Now</a>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <script>
-        new Swiper('.doctor-slider', 
-            {
-                slidesPerView: 1.2,
-                spaceBetween: 16,
-                grabCursor: true,
-                freeMode: true,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2.2,
-                    },
-                    768: {
-                        slidesPerView: 3.2,
-                    },
-                    1024: {
-                        slidesPerView: 4.2,
-                    }
-                }
-            }
-        );
-    </script>
-      
-    
     <!-- ----------------------------------------------------------------------------------------------------- -->
     <!-- ====================================Comprehensive Healthcare========================================= -->
     <!-- ----------------------------------Chăm sóc sức khoẻ toàn diện---------------------------------------- -->
     <!-- ----------------------------------------------------------------------------------------------------- -->
+    <section class="healthcare-section1">
+      <h2>Comprehensive Healthcare</h2>
 
+      <div class="categories1">
+        <button class="active1">Health</button>
+        <button>Testing</button>
+        <button>Vaccination</button>
+      </div>
 
-
-        <h2 style="text-align:center; font-weight: 600; margin-bottom: 20px;">Comprehensive Healthcare</h2>
-
-        <div class="category-filter">
-            <button class="filter-btn active" data-category="health">Health</button>
-            <button class="filter-btn" data-category="testing">Testing</button>
-            <button class="filter-btn" data-category="vaccination">Vaccination</button>
+      <div class="card-container1">
+        <div class="card1">
+          <img src="img/home/OccupationalHealthCheck-upPackagewithForeignElements - Male.webp" alt="Health 1">
+          <div class="card-content1">
+            <h3>Occupational Health Check-up Package with Foreign Elements - Male -</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Hoan My Saigon General Clinic</p>
+            <div class="price1">
+              <span class="new1"><i class="fa-solid fa-dollar-sign"></i>2.593.000đ</span>
+              <span class="old1">3.168.000đ</span>
+            </div>
+            <button class="book-btn1">Book Now</button>
+          </div>
         </div>
-
-        <div class="service-list">
-            <div class="service-card health">
-                <img src="img/OccupationalHealthCheck-upPackagewithForeignElements - Male.webp" alt="Health 1">
-                <h3>Occupational Health Check-up</h3>
-                <p>Hoan My Saigon General Clinic</p>
-                <p><span class="price">2.593.000đ</span> <span class="old-price">3.160.000đ</span></p>
-                <button class="book-btn">Book Now</button>
-            </div>
-            <div class="service-card testing">
-                <img src="img/Pre-employmentHealthCheck-up.png" alt="Testing 1">
-                <h3>Pre-employment Health Check-up</h3>
-                <p>Phap Anh General Clinic</p>
-                <p><span class="price">393.000đ</span></p>
-                <button class="book-btn">Book Now</button>
-            </div>
-            <div class="service-card health">
-                <img src="img/StrokeRiskScreening.png" alt="Health 2">
-                <h3>Stroke Risk Screening</h3>
-                <p>Phap Anh General Clinic</p>
-                <p><span class="price">393.000đ</span></p>
-                <button class="book-btn">Book Now</button>
-            </div>
-            <div class="service-card vaccination">
-                <img src="img/PremiumHealthcareforElderlyParents.png" alt="Vaccination 1">
-                <h3>Premium Healthcare for Elderly Parents</h3>
-                <p>Phap Anh General Clinic</p>
-                <p><span class="price">3.393.000đ</span></p>
-                <button class="book-btn">Book Now</button>
-            </div>
+        <div class="card1">
+          <img src="img/home/Pre-employmentHealthCheck-up.png" alt="Testing 1">
+          <div class="card-content1">
+            <h3>Pre-employment Health Check-up</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
         </div>
-
-        <div style="text-align: center; margin-top: 20px;">
-            <a href="#" id="viewAllBtn" style="color: #00bfff; font-weight: 500; text-decoration: none;">
-            View All <span style="font-size: 14px;">&raquo;&raquo;</span>
-            </a>
+        <div class="card1">
+          <img src="img/home/StrokeRiskScreening.png" alt="Health 2">
+          <div class="card-content1">
+            <h3>Stroke Risk Screening</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="img/home/PremiumHealthcareforElderlyParents.png" alt="Vaccination 1">
+          <div class="card-content1">
+            <h3>Premium Healthcare for Elderly Parents</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>3.393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="img/home/OccupationalHealthCheck-upPackagewithForeignElements - Male.webp" alt="Health 1">
+          <div class="card-content1">
+            <h3>Occupational Health Check-up Package with Foreign Elements - Male -</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Hoan My Saigon General Clinic</p>
+            <div class="price1">
+              <span class="new1"><i class="fa-solid fa-dollar-sign"></i>2.593.000đ</span>
+              <span class="old1">3.168.000đ</span>
+            </div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="img/home/Pre-employmentHealthCheck-up.png" alt="Testing 1">
+          <div class="card-content1">
+            <h3>Pre-employment Health Check-up</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="img/home/StrokeRiskScreening.png" alt="Health 2">
+          <div class="card-content1">
+            <h3>Stroke Risk Screening</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="img/home/PremiumHealthcareforElderlyParents.png" alt="Vaccination 1">
+          <div class="card-content1">
+            <h3>Premium Healthcare for Elderly Parents</h3>
+            <p class="clinic1"><i class="fa-solid fa-hospital"></i> Phap Anh General Clinic</p>
+            <div class="price1"><span class="new1"><i class="fa-solid fa-dollar-sign"></i>3.393.000đ</span></div>
+            <button class="book-btn1">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------------------- -->
+    <!-- ======================================Specialty========================================= -->
+    <!-- ------------------------------------Chuyên Khoa----------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------- -->
+    <section class="specialty-section">
+      <h2>Specialty</h2>
+      <div class="specialty-grid">
+        <div class="specialty-item">
+          <img src="img/home/FamilyDoctor.png" alt="Family Doctor">
+          <p>Family Doctor</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/GastroenterologyAndHepatology.png" alt="Gastroenterology and Hepatology">
+          <p>Gastroenterology and Hepatology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/GeneralInternalMedicine.png" alt="General Internal Medicine">
+          <p>General Internal Medicine</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Endocrinology.png" alt="Endocrinology">
+          <p>Endocrinology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Dermatology.png" alt="Dermatology">
+          <p>Dermatology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Cardiology.png" alt="Cardiology">
+          <p>Cardiology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Rheumatology.png" alt="Rheumatology">
+          <p>Rheumatology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Neurology.png" alt="Neurology">
+          <p>Neurology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Otorhinolaryngoogy.png" alt="Otorhinolaryngology">
+          <p>Otorhinolaryngology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Ophthalmology.png" alt="Ophthalmology">
+          <p>Ophthalmology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Gastroenterology.png" alt="Gastroenterology">
+          <p>Gastroenterology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/InfectiousDiseases.png" alt="Infectious Diseases">
+          <p>Infectious Diseases</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Pulmonology.png" alt="Pulmonology">
+          <p>Pulmonology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Nephrology.png" alt="Nephrology">
+          <p>Nephrology</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/Orthopedics.png" alt="Orthopedics">
+          <p>Orthopedics</p>
+        </div>
+        <div class="specialty-item">
+          <img src="img/home/ObstetricsandGynecology.png" alt="Obstetrics and Gynecology">
+          <p>Obstetrics and Gynecology</p>
         </div>
   
+        <!-- Hiden when do not click view all -->
+        <div class="specialty-item hidden">
+          <img src="img/home/FamilyDoctor.png" alt="Family Doctor">
+          <p>Family Doctor</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img//home/GastroenterologyAndHepatology.png" alt="Gastroenterology and Hepatology">
+          <p>Gastroenterology and Hepatology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/GeneralInternalMedicine.png" alt="General Internal Medicine">
+          <p>General Internal Medicine</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Endocrinology.png" alt="Endocrinology">
+          <p>Endocrinology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Dermatology.png" alt="Dermatology">
+          <p>Dermatology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Cardiology.png" alt="Cardiology">
+          <p>Cardiology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Rheumatology.png" alt="Rheumatology">
+          <p>Rheumatology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Neurology.png" alt="Neurology">
+          <p>Neurology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Otorhinolaryngoogy.png" alt="Otorhinolaryngology">
+          <p>Otorhinolaryngology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Ophthalmology.png" alt="Ophthalmology">
+          <p>Ophthalmology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Gastroenterology.png" alt="Gastroenterology">
+          <p>Gastroenterology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/InfectiousDiseases.png" alt="Infectious Diseases">
+          <p>Infectious Diseases</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Pulmonology.png" alt="Pulmonology">
+          <p>Pulmonology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Nephrology.png" alt="Nephrology">
+          <p>Nephrology</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/Orthopedics.png" alt="Orthopedics">
+          <p>Orthopedics</p>
+        </div>
+        <div class="specialty-item hidden">
+          <img src="img/home/ObstetricsandGynecology.png" alt="Obstetrics and Gynecology">
+          <p>Obstetrics and Gynecology</p>
+        </div>
+      </div>
 
-        <!-- ---------------------------------------------------------------------------------------- -->
-        <!-- ======================================Specialty========================================= -->
-        <!-- ------------------------------------Chuyên Khoa----------------------------------------- -->
-        <!-- ---------------------------------------------------------------------------------------- -->
+      <div class="div-view-all">
+        <button id="toggleButton" class="toggle-btn">
+          <span id="buttonText">View All</span>
+          <span id="arrow" class="arrow"><i class="fa-solid fa-caret-down icon-rotate"></i></span>
+        </button>
+      </div>
+    </section>
+    <script src="js/index/muiten.js"></script>
+    <script src="js/index/specialty.js"></script>
+    <!-- ---------------------------------------------------------------------------------------- -->
+    <!-- ======================================Statistics========================================= -->
+    <!-- ---------------------------------------Thống kê----------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------- -->
 
-
-        <section class="specialty-section">
-            <h2>Specialty</h2>
-            <div class="specialty-grid">
-              <div class="specialty-item">
-                <img src="img/FamilyDoctor.png" alt="Family Doctor">
-                <p>Family Doctor</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/GastroenterologyAndHepatology.png" alt="Gastroenterology and Hepatology">
-                <p>Gastroenterology and Hepatology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/GeneralInternalMedicine.png" alt="General Internal Medicine">
-                <p>General Internal Medicine</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Endocrinology.png" alt="Endocrinology">
-                <p>Endocrinology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Dermatology.png" alt="Dermatology">
-                <p>Dermatology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Cardiology.png" alt="Cardiology">
-                <p>Cardiology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Rheumatology.png" alt="Rheumatology">
-                <p>Rheumatology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Neurology.png" alt="Neurology">
-                <p>Neurology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Otorhinolaryngoogy.png" alt="Otorhinolaryngology">
-                <p>Otorhinolaryngology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Ophthalmology.png" alt="Ophthalmology">
-                <p>Ophthalmology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Gastroenterology.png" alt="Gastroenterology">
-                <p>Gastroenterology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/InfectiousDiseases.png" alt="Infectious Diseases">
-                <p>Infectious Diseases</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Pulmonology.png" alt="Pulmonology">
-                <p>Pulmonology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Nephrology.png" alt="Nephrology">
-                <p>Nephrology</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/Orthopedics.png" alt="Orthopedics">
-                <p>Orthopedics</p>
-              </div>
-              <div class="specialty-item">
-                <img src="img/ObstetricsandGynecology.png" alt="Obstetrics and Gynecology">
-                <p>Obstetrics and Gynecology</p>
-              </div>
-        
-              <!-- Nội dung ẩn đi, khi chưa ấn view all -->
-              <div class="specialty-item hidden">
-                <img src="img/FamilyDoctor.png" alt="Family Doctor">
-                <p>Family Doctor</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/GastroenterologyAndHepatology.png" alt="Gastroenterology and Hepatology">
-                <p>Gastroenterology and Hepatology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/GeneralInternalMedicine.png" alt="General Internal Medicine">
-                <p>General Internal Medicine</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Endocrinology.png" alt="Endocrinology">
-                <p>Endocrinology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Dermatology.png" alt="Dermatology">
-                <p>Dermatology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Cardiology.png" alt="Cardiology">
-                <p>Cardiology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Rheumatology.png" alt="Rheumatology">
-                <p>Rheumatology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Neurology.png" alt="Neurology">
-                <p>Neurology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Otorhinolaryngoogy.png" alt="Otorhinolaryngology">
-                <p>Otorhinolaryngology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Ophthalmology.png" alt="Ophthalmology">
-                <p>Ophthalmology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Gastroenterology.png" alt="Gastroenterology">
-                <p>Gastroenterology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/InfectiousDiseases.png" alt="Infectious Diseases">
-                <p>Infectious Diseases</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Pulmonology.png" alt="Pulmonology">
-                <p>Pulmonology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Nephrology.png" alt="Nephrology">
-                <p>Nephrology</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/Orthopedics.png" alt="Orthopedics">
-                <p>Orthopedics</p>
-              </div>
-              <div class="specialty-item hidden">
-                <img src="img/ObstetricsandGynecology.png" alt="Obstetrics and Gynecology">
-                <p>Obstetrics and Gynecology</p>
-              </div>
-            </div>
-        
-        
-            <!-- Nút View All -->
-             <div class="div-view-all">
-              <button id="toggleButton" class="toggle-btn">
-                <span id="buttonText">View All</span>
-                <span id="arrow" class="arrow">▼</span>
-              </button>
-             </div>
-            
-            
-            
-            
-          </section>
-        
-          <script>
-            const toggleBtn = document.getElementById("toggleButton");
-            const buttonText = document.getElementById("buttonText");
-            const arrow = document.getElementById("arrow");
-            const hiddenItems = document.querySelectorAll(".specialty-grid .hidden");
-            
-            let isExpanded = false;
-            
-            toggleBtn.addEventListener("click", function () {
-              isExpanded = !isExpanded;
-            
-              if (isExpanded) {
-                buttonText.textContent = "Collapse";
-                arrow.textContent = "▲";
-                hiddenItems.forEach(item => {
-                  item.style.display = "flex"; // hoặc "block", tùy vào thiết kế của bạn
-                });
-              } else {
-                buttonText.textContent = "View All";
-                arrow.textContent = "▼";
-                hiddenItems.forEach(item => {
-                  item.style.display = "none";
-                });
-              }
-            });
-          
-            // Khởi tạo: ẩn tất cả phần tử hidden ban đầu
-            hiddenItems.forEach(item => {
-              item.style.display = "none";
-            });
-          </script>
-          
-  
-  
-          <!-- ======================================================================== -->
-
-          <section class="statistics-section">
-            <h2 class="section-title">Statistics</h2>
-            <div class="statistics-box">
-              <div class="stat-item">
-                <img src="img/PatientVisit.png" alt="Patient Visit">
-                <h3>3.0M+</h3>
-                <p>Patient Visit</p>
-              </div>
-              <div class="stat-item">
-                <img src="img/medicalfacility.png" alt="Medical Facility">
-                <h3>300+</h3>
-                <p>medical facility</p>
-              </div>
-              <div class="stat-item">
-                <img src="img/Hospital.png" alt="Hospital">
-                <h3>50+</h3>
-                <p>Hospital</p>
-              </div>
-              <div class="stat-item">
-                <img src="img/Doctor.png" alt="Doctor">
-                <h3>1000+</h3>
-                <p>Doctor</p>
-              </div>
-              <div class="stat-item">
-                <img src="img/MonthlyVisits.png" alt="Monthly Visits">
-                <h3>850K+</h3>
-                <p>Monthly Visits</p>
-              </div>
-              <div class="stat-item">
-                <img src="img/DailyVisits.png" alt="Daily Visits">
-                <h3>28.3K+</h3>
-                <p>Daily Visits</p>
-              </div>
-            </div>
-          </section>
-          
-
-          <!-- ======================================= -->
-
-
-          <section class="review-section">
-            <h2 class="section-title">Customer Reviews</h2>
-            <div class="scroll-wrapper">
-              <div class="review-card">
-                <img src="img/customer1.png" alt="Hong Ha">
-                <h3>Hong Ha</h3>
-                <hr>
-                <p>Booking tests here is very straightforward, with specific dates and times, so you can just go in and get tested right away without any hassle. I feel confident booking for my family, and they even offer at-home testing, which saves a lot of time.</p>
-              </div>
-              <div class="review-card">
-                <img src="img/customer2.png" alt="Hong Lan">
-                <h3>Hong Lan</h3>
-                <hr>
-                <p>The video doctor consultation service is so convenient. I was stressed and didn't want to be around crowds, so I looked into remote consultations with a psychologist here. It's truly so convenient, and the doctor's advice was very detailed and gentle. I think it's really worth the money.</p>
-              </div>
-              <div class="review-card">
-                <img src="img/customer3.png" alt="Hong Nhung">
-                <h3>Hong Nhung</h3>
-                <hr>
-                <p>This is my first time downloading and using TCP, and I find it easy and very convenient. Being busy with work like me, booking in advance here with a chosen date and time saves me the trouble of queuing and waiting at the hospital.</p>
-              </div>
-          
-              <!-- Thêm bao nhiêu review cũng được -->
-
-              <div class="review-card">
-                <img src="img/customer1.png" alt="Hong Ha">
-                <h3>Hong Ha</h3>
-                <hr>
-                <p>Booking tests here is very straightforward, with specific dates and times, so you can just go in and get tested right away without any hassle. I feel confident booking for my family, and they even offer at-home testing, which saves a lot of time.</p>
-              </div>
-              <div class="review-card">
-                <img src="img/customer2.png" alt="Hong Lan">
-                <h3>Hong Lan</h3>
-                <hr>
-                <p>The video doctor consultation service is so convenient. I was stressed and didn't want to be around crowds, so I looked into remote consultations with a psychologist here. It's truly so convenient, and the doctor's advice was very detailed and gentle. I think it's really worth the money.</p>
-              </div>
-              <div class="review-card">
-                <img src="img/customer3.png" alt="Hong Nhung">
-                <h3>Hong Nhung</h3>
-                <hr>
-                <p>This is my first time downloading and using TCP, and I find it easy and very convenient. Being busy with work like me, booking in advance here with a chosen date and time saves me the trouble of queuing and waiting at the hospital.</p>
-              </div>
-
-            </div>
-          </section>
-          
-
-
-          
-
-
-  <footer class="footer">         
-    <div class="footer-container">
+    <section class="statistics-section">
+      <h2 class="section-title">Statistics</h2>
+      <div class="statistics-box">
+        <div class="stat-item">
+          <img src="img/home/PatientVisit.png" alt="Patient Visit">
+          <h3>3.0M+</h3>
+          <p>Patient Visit</p>
+        </div>
+        <div class="stat-item">
+          <img src="img/home/medicalfacility.png" alt="Medical Facility">
+          <h3>300+</h3>
+          <p>Medical facility</p>
+        </div>
+        <div class="stat-item">
+          <img src="img/home/Hospital.png" alt="Hospital">
+          <h3>50+</h3>
+          <p>Hospital</p>
+        </div>
+        <div class="stat-item">
+          <img src="img/home/Doctor.png" alt="Doctor">
+          <h3>1000+</h3>
+          <p>Doctor</p>
+        </div>
+        <div class="stat-item">
+          <img src="img/home/MonthlyVisits.png" alt="Monthly Visits">
+          <h3>850K+</h3>
+          <p>Monthly Visits</p>
+        </div>
+        <div class="stat-item">
+          <img src="img/home/DailyVisits.png" alt="Daily Visits">
+          <h3>28.3K+</h3>
+          <p>Daily Visits</p>
+        </div>
+      </div>
+    </section>      
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ======================================Customer Reviews========================================= -->
+    <!-- ----------------------------------Đánh giá của khách hàng-------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <section class="review-section">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="scroll-wrapper">
+        <div class="review-card">
+          <img src="img/home/customer1.png" alt="Hong Ha">
+          <h3>Hong Ha</h3>
+          <hr>
+          <p>Booking tests here is very straightforward, with specific dates and times, so you can just go in and get tested right away without any hassle. I feel confident booking for my family, and they even offer at-home testing, which saves a lot of time.</p>
+        </div>
+        <div class="review-card">
+          <img src="img/home/customer2.png" alt="Hong Lan">
+          <h3>Hong Lan</h3>
+          <hr>
+          <p>The video doctor consultation service is so convenient. I was stressed and didn't want to be around crowds, so I looked into remote consultations with a psychologist here. It's truly so convenient, and the doctor's advice was very detailed and gentle. I think it's really worth the money.</p>
+        </div>
+        <div class="review-card">
+          <img src="img/home/customer3.png" alt="Hong Nhung">
+          <h3>Hong Nhung</h3>
+          <hr>
+          <p>This is my first time downloading and using TCP, and I find it easy and very convenient. Being busy with work like me, booking in advance here with a chosen date and time saves me the trouble of queuing and waiting at the hospital.</p>
+        </div>
+        <div class="review-card">
+          <img src="img/home/customer1.png" alt="Hong Ha">
+          <h3>Hong Ha</h3>
+          <hr>
+          <p>Booking tests here is very straightforward, with specific dates and times, so you can just go in and get tested right away without any hassle. I feel confident booking for my family, and they even offer at-home testing, which saves a lot of time.</p>
+        </div>
+        <div class="review-card">
+          <img src="img/home/customer2.png" alt="Hong Lan">
+          <h3>Hong Lan</h3>
+          <hr>
+          <p>The video doctor consultation service is so convenient. I was stressed and didn't want to be around crowds, so I looked into remote consultations with a psychologist here. It's truly so convenient, and the doctor's advice was very detailed and gentle. I think it's really worth the money.</p>
+        </div>
+        <div class="review-card">
+          <img src="img/home/customer3.png" alt="Hong Nhung">
+          <h3>Hong Nhung</h3>
+          <hr>
+          <p>This is my first time downloading and using TCP, and I find it easy and very convenient. Being busy with work like me, booking in advance here with a chosen date and time saves me the trouble of queuing and waiting at the hospital.</p>
+        </div>
+      </div>
+    </section>  
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <!-- ======================================footer=================================================== -->
+    <!-- ------------------------------------Chân trang------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <footer class="footer">         
       <div class="footer-container"> 
         <div class="footer-left">
           <div class="logo">
-            <img src="img/Logo.png" alt="Logo" style="margin-left: 0;">
+            <img src="img/home/Logo.png" alt="Logo" style="margin-left: 0;">
             <span style="color: #00bfff; font-weight: bold;">TCP</span>
           </div>
           <p><strong>Address:</strong> 236/29/18 Dien Bien Phu Street - Ward 17 - Binh Thanh District - Ho Chi Minh City.</p>
-          <p><strong>Website:</strong> <a href="https://medpro.vn">https://medpro.vn</a></p>
-          <p><strong>Email:</strong> cskh@medpro.vn</p>
+          <p><strong>Website:</strong> <a href="index.html">https://tcp.vn</a></p>
+          <p><strong>Email:</strong> cskh@tcp.vn</p>
           <p><strong>Phone Number:</strong> (028) 710 78098</p>
-        </div>
-        
+        </div>                
         <div class="footer-right" >
           <div class="footer-row">
             <div class="footer-column">
@@ -849,8 +839,7 @@
                 <li>Refund Process</li>
               </ul>
             </div>
-          </div>
-        
+          </div>       
           <div class="footer-row">
             <div class="footer-column">
               <h3 class="footer-title">Contact for Partnership</h3>
@@ -870,7 +859,7 @@
               </ul>
             </div>
             <div class="footer-column">
-              <h3 class="footer-title">About Medpro</h3>
+              <h3 class="footer-title">About TCP</h3>
               <ul>
                 <li>About Us</li>
                 <li>Terms of Service</li>
@@ -880,54 +869,38 @@
             </div>
           </div>
         </div>
-        
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 – All rights reserved by TCP Application Joint Stock Company</p>
+        <p><i class="fa-regular fa-copyright"></i> 2025 – All rights reserved by TCP Application Joint Stock Company</p>
       </div>
-  </footer>
-          
-          
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const titles = document.querySelectorAll('.footer-title');
-      titles.forEach(function (title) {
-        title.addEventListener('click', function () {
-          this.classList.toggle('active');
-        });
-      });
-    });
-  </script>
-
-
-<section class="mobile-nav">
-  <a href="#home" class="nav-item active">
-    <i class="fa fa-home"></i>
-    <span>Home</span>
-  </a>
-  <a href="#instructions" class="nav-item">
-    <i class="fa fa-book"></i>
-    <span>Instructions</span>
-  </a>
-  <a href="#appointment" class="nav-item">
-    <i class="fa fa-ticket"></i>
-    <span>Appointment Ticket</span>
-  </a>
-  <a href="#notifications" class="nav-item">
-    <i class="fa fa-bell"></i>
-    <span>Notifications</span>
-  </a>
-  <a href="#records" class="nav-item">
-    <i class="fa fa-folder"></i>
-    <span>Medical Records</span>
-  </a>
-</section>
-
-
-<!-- <div id="overlay" class="overlay"></div> -->
-
-
-
-</body>
+    </footer>        
+    <script src="js/index/footer.js"></script>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ======================================Menu Bottom=================================================== -->
+    <!-- --------------------------------Menu bên dưới (Mobile, Ipad)---------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <section class="mobile-nav">
+      <a href="#home" class="nav-item active">
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#instructions" class="nav-item">
+        <i class="fa fa-book"></i>
+        <span>Instructions</span>
+      </a>
+      <a href="#appointment" class="nav-item">
+        <i class="fa fa-ticket"></i>
+        <span>Appointment Ticket</span>
+      </a>
+      <a href="#notifications" class="nav-item">
+        <i class="fa fa-bell"></i>
+        <span>Notifications</span>
+      </a>
+      <a href="#records" class="nav-item">
+        <i class="fa fa-folder"></i>
+        <span>Medical Records</span>
+      </a>
+    </section>
+  </body>
 </html>

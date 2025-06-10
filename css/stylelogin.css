@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url(/AppoinmentBooking/img/picbackgroundregister.png);
+  background-image: url(../img/Login/picbackgroundregister.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,6 +45,7 @@ body {
 
 .left-panel h2 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .left-panel p {
