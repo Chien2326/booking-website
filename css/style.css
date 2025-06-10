@@ -605,12 +605,12 @@ body {
     }
 
     
-      .background-image1 {
+.background-image1 {
   width: 100%;
   height: 100%;
   background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #fff 100%),
-    url(../img/home/BannerMobile.png) no-repeat center center;
+  linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #fff 100%),
+  url(../img/home/BannerMobile.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -659,7 +659,7 @@ body {
 
   .scroll-container1 {
     top: -90px; /* Đẩy xuống dưới ảnh */
-    width: 440px;
+    width: 95%;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -717,10 +717,10 @@ body {
 }
 @media (max-width: 768px) {
   .background-container1 {
-      display: block; /* Ẩn trên di động */
+      display: block; /* Hiển thị trên di động */
   }
   .scroll-container1 {
-      display: block; /* Ẩn trên di động */
+      display: block; /* Hiển thị trên di động */
   }
   .headerme {
       display: none; /* Ẩn header lớn trên di động */
@@ -731,7 +731,6 @@ body {
 .service-wrapper {
     overflow-x: hidden;
     margin: 60px;
-    
 }
 
 .service-cards {
@@ -769,8 +768,8 @@ body {
 }
 
 .card img {
-    width: 50px;
-    height: 50px;
+    width: 31.25%;
+    height: 31.25%;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -789,8 +788,8 @@ body {
     }
 
     .card {
-        width: 140px;
-        height: 140px;
+        width: 90px;
+        height: 90px;
     }
 
     .card p {
